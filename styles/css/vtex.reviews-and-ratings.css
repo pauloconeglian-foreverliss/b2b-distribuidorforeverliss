@@ -1,0 +1,13 @@
+.container {
+  max-width: 96rem;
+  padding-left: .25rem;
+  padding-right: .25rem;
+}
+
+.star--filled {
+  color: #FFB100;
+}
+
+.star--empty {
+  color: #DDD;
+}

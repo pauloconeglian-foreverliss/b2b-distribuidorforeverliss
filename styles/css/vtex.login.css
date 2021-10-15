@@ -1,0 +1,73 @@
+.box {
+  right: -5.6rem !important;
+}
+
+/*.formLinkContainer,*/
+.dontHaveAccount,
+.optionsSticky {
+  display: none;
+}
+
+.content--emailVerification {
+  justify-content: center;
+  align-items: center;
+}
+
+.optionsListItem:first-child {
+  display: none;
+}
+
+@media screen and (max-width: 1025px) {
+  .label {
+    display: block;
+  }
+}
+
+@media screen and (max-width: 1023px) {
+  .container {
+    max-width: 44px;
+  }
+}
+
+.signUpButtonContainer {
+  border: 1px solid transparent;
+  background-color: #fff3cd;
+  box-sizing: border-box;
+  border-color: #ffeeba;
+  border-radius: .25rem;
+  margin-bottom: 1rem;
+  position: relative;
+  font-size: 0.8rem;
+  font-weight: 400;
+  line-height: 1.5;
+  text-align: left;
+  margin-top: 1rem;
+  color: #856404;
+  padding: 1rem;
+}
+
+.signUpButtonParagraph::before {
+  margin-right: 0.2rem;
+  content: "\279C";
+}
+
+.signUpButtonParagraph {
+  margin: 0 0 1rem 0;
+}
+
+.signUpButton {
+  text-transform: uppercase;
+  background-color: #00bc0d;
+  justify-content: center;
+  border-width: .125rem;
+  text-decoration: none;
+  border-color: #00bc0d;
+  border-radius: .25rem;
+  align-items: center;
+  font-size: .875rem;
+  min-height: 2rem;
+  font-weight: 500;
+  line-height: 1;
+  display: flex;
+  color: #fff;
+}

@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="initial-scale=1.0">
+<!-- So that mobile webkit will display zoomed in -->
+<meta name="format-detection" content="telephone=no">
+<!-- disable auto telephone linking in iOS -->
+<title>{{orders.0.sellers.0.name}}</title>
+<style type="text/css">
+        /* Resets: see reset.css for details */
+        .ReadMsgBody { width: 100%; background-color: #ebebeb;}
+        .ExternalClass {width: 100%; background-color: #ebebeb;}
+        .ExternalClass, .ExternalClass p, .ExternalClass span, .ExternalClass font, .ExternalClass td, .ExternalClass div {line-height:100%;}
+        body {-webkit-text-size-adjust:none; -ms-text-size-adjust:none;}
+        body {padding:0;}
+        table td {border-collapse:collapse;}
+        .yshortcuts a {border-bottom: none !important;}
+        /* Constrain email width for small screens */
+        @media screen and (max-width: 600px) {
+            table[class="container"] {
+                width: 100% !important;
+            }
+        }
+        /* Give content more room on mobile */
+        @media screen and (max-width: 480px) {
+            .status{padding-bottom:0px;}
+        }
+        /* Styles for forcing columns to rows */
+        @media only screen and (max-width : 600px) {
+            /* force container columns to (horizontal) blocks */
+            .container{border-radius:0 !important;}
+            .no-padding-top-bottom-mobile{padding-top:0;padding-bottom:0;padding:0 !important;}
+            .img-product{width:70px;}
+            .side-border td{padding-left:0;}
+            .button{padding:11px 0 !important;font-size:13px;width:100%;}
+            .table-button{width:100% !important;}
+            td[class="force-col"] {
+                display: block;
+                padding-right: 0 !important;
+            }
+            table[class="col-3"] {
+                /* unset table align="left/right" */
+                float: none !important;
+                width: 100% !important;
+                /* change left/right padding and margins to top/bottom ones */
+                padding-bottom: 12px;
+                border-bottom: 1px solid #eee;
+            }
+            /* remove bottom border for last column/row */
+            table[id="last-col-3"] {
+                border-bottom: none !important;
+            }
+            /* align images right and shrink them a bit */
+            img[class="col-3-img"] {
+                float: right;
+                margin-left: 6px;
+                max-width: 130px;
+            }
+        }
+        @media only screen and (max-width : 800px) {
+            .status{width:100% !important;}
+            .status div{width:200px !important;}
+        }
+</style>
+</head>
+<body marginwidth="0" marginheight="0" bgcolor="#fff" style="padding:0px 0px;color:#333;" leftmargin="0" topmargin="0">
+<!-- 100% wrapper (grey background) -->
+    <table width="100%" cellspacing="0" border="0" bgcolor="#fff">
+        <tbody>
+            <tr>
+                <td valign="top" bgcolor="#fff" align="center" class="no-padding-top-bottom-mobile" style="background-color: #fff;color:#333;">
+                    <!-- 600px container (white background) -->
+                    <table cellspacing="0" cellpadding="0" border="0" bgcolor="#fff" class="container" style="max-width:600px;">
+                        <tbody>
+                            <tr>
+                                <td bgcolor="#ffffff" align="left" class="container-padding" style="background-color: #ffffff; padding-left: 10px; padding-right: 3px; font-size: 13px; line-height: 19px; font-family: Helvetica, sans-serif; color: #333;">
+                                    <br />
+                                    <table width="100%" cellspacing="0" cellpadding="0" border="0" class="columns-container">
+                                        <tbody>
+                                            <tr>
+                                                <td class="force-col" style="padding-right: 20px;">
+                                                    <table width="100%" cellspacing="0" cellpadding="0" border="0" align="left" style="padding-bottom: 10px;border:none;border-left:0px;border-right:0px;" class="col-3">
+                                                        <tbody>
+                                                            <tr>
+                                                                <td align="left">
+                                                                    <a href="http://{{_accountInfo.HostName}}.com.br"><img height="32px" border="0" width="auto" style="border:none;border-left:0px;border-right:0px;" alt="{{_accountInfo.TradingName}}" src="http://licensemanager.vtex.com.br/api/site/pub/accounts/{{_accountInfo.Id}}/logos/show" class="img-logo"></a>
+                                                                    <br /><br />
+                                                                </td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="force-col">
+                                                    <!-- ### BEGIN CONTENT ### -->
+                                                    <table width="100%" cellspacing="0" cellpadding="0" border="0" bgcolor="#ffffff" align="left" style="padding-bottom:0;margin-bottom:0;" class="col-3">
+                                                        <tbody>
+                                                            <tr>
+                                                                <td align="left">
+            													{{#eq orders.0.openTextField.language "pt"}}
+    															{{#eq orders.0.openTextField.newStatus 0}}
+																	<span style="font-size:18px;">Olá, <strong>{{orders.0.clientProfileData.firstName}}</strong>.</span><br> <div style="padding-top:3px;padding-bottom:10px;">Seu admin não está mais bloqueado.</div>
+																{{/eq}}
+																{{#eq orders.0.openTextField.newStatus 1}}
+																	<span style="font-size:18px;">Olá, <strong>{{orders.0.clientProfileData.firstName}}</strong>.</span><br> <div style="padding-top:3px;padding-bottom:10px;">Acreditamos que exista algum atraso no pagamento. 
+																	<br>
+																	Por favor, verifique suas <a href="https://{{orders.0.openTextField.value}}.vtexcommercestable.com.br/admin/billing/invoices" >cobranças</a>.</div>
+																{{/eq}}
+																{{#eq orders.0.openTextField.newStatus 2}}
+																	<span style="font-size:18px;">Olá, <strong>{{orders.0.clientProfileData.firstName}}</strong>.</span><br> <div style="padding-top:3px;padding-bottom:10px;">Seu admin logo estará bloqueado. 
+																	<br>
+																	Por favor, verifique suas <a href="https://{{orders.0.openTextField.value}}.vtexcommercestable.com.br/admin/billing/invoices" >cobranças</a> imediatamente.</div>
+																{{/eq}}
+																{{#eq orders.0.openTextField.newStatus 3}}
+																	<span style="font-size:18px;">Olá, <strong>{{orders.0.clientProfileData.firstName}}</strong>.</span><br> <div style="padding-top:3px;padding-bottom:10px;">Seu admin está bloqueado devido a cobranças vencidas. 
+																	<br>
+																	Por favor, verifique suas <a href="https://{{orders.0.openTextField.value}}.vtexcommercestable.com.br/admin/billing/invoices" >cobranças</a> imediatamente.</div>
+																{{/eq}}
+																{{/eq}}
+																{{#eq orders.0.openTextField.language "en"}}
+    															{{#eq orders.0.openTextField.newStatus 0}}
+																	ENGLISH - <span style="font-size:18px;">Olá, <strong>{{orders.0.clientProfileData.firstName}}</strong>.</span><br> <div style="padding-top:3px;padding-bottom:10px;">Seu admin não está mais bloqueado.</div>
+																{{/eq}}
+																{{#eq orders.0.openTextField.newStatus 1}}
+																	ENGLISH - <span style="font-size:18px;">Olá, <strong>{{orders.0.clientProfileData.firstName}}</strong>.</span><br> <div style="padding-top:3px;padding-bottom:10px;">Acreditamos que exista algum atraso no pagamento. 
+																	<br>
+																	Por favor, verifique suas <a href="https://{{orders.0.openTextField.value}}.vtexcommercestable.com.br/admin/billing/invoices" >cobranças</a>.</div>
+																{{/eq}}
+																{{#eq orders.0.openTextField.newStatus 2}}
+																	ENGLISH - <span style="font-size:18px;">Olá, <strong>{{orders.0.clientProfileData.firstName}}</strong>.</span><br> <div style="padding-top:3px;padding-bottom:10px;">Seu admin logo estará bloqueado. 
+																	<br>
+																	Por favor, verifique suas <a href="https://{{orders.0.openTextField.value}}.vtexcommercestable.com.br/admin/billing/invoices" >cobranças</a> imediatamente.</div>
+																{{/eq}}
+																{{#eq orders.0.openTextField.newStatus 3}}
+																	ENGLISH - <span style="font-size:18px;">Olá, <strong>{{orders.0.clientProfileData.firstName}}</strong>.</span><br> <div style="padding-top:3px;padding-bottom:10px;">Seu admin está bloqueado devido a cobranças vencidas. 
+																	<br>
+																	Por favor, verifique suas <a href="https://{{orders.0.openTextField.value}}.vtexcommercestable.com.br/admin/billing/invoices" >cobranças</a> imediatamente.</div>
+																{{/eq}}
+																{{/eq}}
+																{{#eq orders.0.openTextField.language "es"}}
+    															{{#eq orders.0.openTextField.newStatus 0}}
+																	SPANISH - <span style="font-size:18px;">Olá, <strong>{{orders.0.clientProfileData.firstName}}</strong>.</span><br> <div style="padding-top:3px;padding-bottom:10px;">Seu admin não está mais bloqueado.</div>
+																{{/eq}}
+																{{#eq orders.0.openTextField.newStatus 1}}
+																	SPANISH - <span style="font-size:18px;">Olá, <strong>{{orders.0.clientProfileData.firstName}}</strong>.</span><br> <div style="padding-top:3px;padding-bottom:10px;">Acreditamos que exista algum atraso no pagamento. 
+																	<br>
+																	Por favor, verifique suas <a href="https://{{orders.0.openTextField.value}}.vtexcommercestable.com.br/admin/billing/invoices" >cobranças</a>.</div>
+																{{/eq}}
+																{{#eq orders.0.openTextField.newStatus 2}}
+																	SPANISH - <span style="font-size:18px;">Olá, <strong>{{orders.0.clientProfileData.firstName}}</strong>.</span><br> <div style="padding-top:3px;padding-bottom:10px;">Seu admin logo estará bloqueado. 
+																	<br>
+																	Por favor, verifique suas <a href="https://{{orders.0.openTextField.value}}.vtexcommercestable.com.br/admin/billing/invoices" >cobranças</a> imediatamente.</div>
+																{{/eq}}
+																{{#eq orders.0.openTextField.newStatus 3}}
+																	SPANISH - <span style="font-size:18px;">Olá, <strong>{{orders.0.clientProfileData.firstName}}</strong>.</span><br> <div style="padding-top:3px;padding-bottom:10px;">Seu admin está bloqueado devido a cobranças vencidas. 
+																	<br>
+																	Por favor, verifique suas <a href="https://{{orders.0.openTextField.value}}.vtexcommercestable.com.br/admin/billing/invoices" >cobranças</a> imediatamente.</div>
+																{{/eq}}
+																{{/eq}}
+                                                                </td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                
+                                            </tr>
+                                                    <br />
+                                                </td>
+<!-- 
+                                            <tr>
+                                                <td >
+                                                    <table align="left" class="table-button">
+                                                        <tbody>
+                                                            <tr>
+                                                                <td align="center" style="text-align:center">
+                                                                    <a style="line-height:19px;margin-bottom:15px;background: #006dcc; color: #fff; display:inline-block; text-shadow:0 -1px 0 rgba(0, 0, 0, 0.25);text-decoration: none;padding-top:10px;padding-right:15px;padding-bottom:10px;padding-left:15px;border:1px solid #ccc;border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25); background-image: linear-gradient(rgb(0, 136, 204), rgb(0, 68, 204)); border-radius:4px;text-align:center;margin-top:10px" href="https://{{orders.0.openTextField.value}}.vtexcommercestable.com.br/admin/billing/invoices" class="button">Verifique aqui suas cobranças.</a>                                                                    
+                                                                </td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table> 
+                                                </td>
+                                            </tr>
+ -->
+                                            <tr>
+                                                <td>
+													{{#eq orders.0.openTextField.language "pt"}}
+                                                    <strong>Atenciosamente,</strong><br>
+                                                    <strong>Departamento Financeiro</strong>.<br><br>
+                                                    <p>Em casa de dúvidas acesse nosso: <a href=" http://help.vtex.com/faq/financeiro-duvidas-frequentes-faq/" target="_blank">FAQ</a> </p><br>
+													{{/eq}}
+													{{#eq orders.0.openTextField.language "en"}}
+                                                    <strong>ENGLISH - Atenciosamente,</strong><br>
+                                                    <strong>ENGLISH - Departamento Financeiro</strong>.<br><br>
+                                                    <p>ENGLISH - Em casa de dúvidas acesse nosso: <a href=" http://help.vtex.com/faq/financeiro-duvidas-frequentes-faq/" target="_blank">FAQ</a> </p><br>
+													{{/eq}}
+													{{#eq orders.0.openTextField.language "es"}}
+                                                    <strong>SPANISH - Atenciosamente,</strong><br>
+                                                    <strong>SPANISH - Departamento Financeiro</strong>.<br><br>
+                                                    <p>SPANISH - Em casa de dúvidas acesse nosso: <a href=" http://help.vtex.com/faq/financeiro-duvidas-frequentes-faq/" target="_blank">FAQ</a> </p><br>
+													{{/eq}}
+
+                                                </td>
+                                            </tr>   
+                                        </tbody>
+                                    </table>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+<!--/600px container -->
+<!--/100% wrapper-->
+</body>
+</html>

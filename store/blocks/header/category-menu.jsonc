@@ -1,0 +1,38 @@
+{
+  "category-menu#desktop": {
+    "props": {
+      "showAllDepartments": false,
+      "showSubcategories": true,
+      "menuDisposition": "center",
+      "mobileMode": false,
+      "experimentalOptimizeRendering": true,
+      "departments": [
+        { "id": 1217 }, /* Maquiagem */
+        { "id": 1231 }, /* Produtos */
+        { "id": 1237 }, /* Progressiva e Botox */
+        { "id": 1243 }, /* Tinta de Cabelo */
+        { "id": 1183 }, /* Tratamento */
+        { "id": 1183 }, /* Tratamento */
+        { "id": 1474 }  /* Saúde e Beleza */
+      ]
+    }
+  },
+
+  "category-menu#mobile": {
+    "props": {
+      "showAllDepartments": false,
+      "showSubcategories": true,
+      "menuDisposition": "center",
+      "mobileMode": true,
+      "experimentalOptimizeRendering": true,
+      "departments": [
+        { "id": 1217 }, /* Maquiagem */
+        { "id": 1231 }, /* Produtos */
+        { "id": 1237 }, /* Progressiva e Botox */
+        { "id": 1243 }, /* Tinta de Cabelo */
+        { "id": 1183 }, /* Tratamento */
+        { "id": 1474 }  /* Saúde e Beleza */
+      ]
+    }
+  }
+}

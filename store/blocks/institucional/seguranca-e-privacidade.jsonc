@@ -1,0 +1,45 @@
+{
+  "store.custom#seguranca-e-privacidade": {
+    "blocks": [
+      "flex-layout.row#seguranca-e-privacidade-row",
+      "newsletter"
+    ]
+  },
+
+  "flex-layout.row#seguranca-e-privacidade-row": {
+    "children": [
+      "flex-layout.col#pages-menu",
+      "flex-layout.col#text-seguranca-e-privacidade"
+    ],
+    "props": {
+      "blockClass": "institucional-row",
+      "paddingTop": 8,
+      "paddingBottom": 8
+    }
+  },
+
+  "flex-layout.col#text-seguranca-e-privacidade": {
+    "children": [
+      "rich-text#title-seguranca-e-privacidade",
+      "rich-text#seguranca-e-privacidade-text"
+    ],
+    "props": {
+      "blockClass": "textColumn",
+      "preventVerticalStretch": true
+    }
+  },
+
+  "rich-text#title-seguranca-e-privacidade": {
+    "props": {
+      "text": "# Segurança e Privacidade",
+      "blockClass": "title-pages"
+    }
+  },
+
+  "rich-text#seguranca-e-privacidade-text": {
+    "props": {
+      "text": "",
+      "blockClass": "about"
+    }
+  }
+}

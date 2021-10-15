@@ -1,0 +1,49 @@
+.optionsSticky {
+  display: none;
+}
+
+.signUpButtonContainer {
+  border: 1px solid transparent;
+  background-color: #fff3cd;
+  border-radius: .25rem;
+  border-color: #ffeeba;
+  margin-bottom: 1rem;
+  position: relative;
+  padding: 1.25rem;
+  color: #856404;
+}
+
+.signUpButtonParagraph {
+  font-size: 0.8rem;
+  margin-top: 0;
+}
+
+.signUpButton {
+  -webkit-font-smoothing: antialiased;
+  -webkit-box-direction: normal;
+  border: .125rem solid #00bc0d;
+  background-color: #00bc0d;
+  text-transform: uppercase;
+  justify-content: center;
+  text-decoration: none;
+  border-radius: .25rem;
+  align-items: center;
+  font-size: .875rem;
+  min-height: 2rem;
+  font-weight: 500;
+  line-height: 1;
+  display: flex;
+  color: #fff;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+.signUpButton:hover {
+  background-color: #0adc18;
+  border-color: #0adc18;
+}
+
+.dontHaveAccount {
+  display: none;
+}

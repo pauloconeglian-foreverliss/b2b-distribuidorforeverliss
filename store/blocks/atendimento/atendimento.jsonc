@@ -1,0 +1,45 @@
+{
+  "store.custom#atendimento": {
+    "blocks": [
+      "flex-layout.row#atendimento-row",
+      "newsletter"
+    ]
+  },
+
+  "flex-layout.row#atendimento-row": {
+    "children": [
+      "flex-layout.col#pages-menu",
+      "flex-layout.col#text-atendimento"
+    ],
+    "props": {
+      "blockClass": "institucional-row",
+      "paddingTop": 8,
+      "paddingBottom": 8
+    }
+  },
+
+  "flex-layout.col#text-atendimento": {
+    "children": [
+      "rich-text#title-atendimento",
+      "rich-text#atendimento-text"
+    ],
+    "props": {
+      "blockClass": "textColumn",
+      "preventVerticalStretch": true
+    }
+  },
+
+    "rich-text#title-atendimento": {
+      "props": {
+        "text": "# Fale Conosco",
+        "blockClass": "title-pages"
+      }
+    },
+
+    "rich-text#atendimento-text": {
+      "props": {
+        "text": "Nosso principal canal de atendimento ao distribuidor e revendedor é feito via e-mail.\nEmail de Contato Distribuidor: distribuidor@foreverliss.com.br.",
+        "blockClass": "about"
+      }
+    }
+}

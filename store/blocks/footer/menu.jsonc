@@ -1,0 +1,336 @@
+{
+  /**
+  * Desktop
+  **/
+  "vtex.menu@2.x:menu#institucional": {
+    "props": {
+      "orientation": "vertical",
+      "blockClass": "institucional-footer"
+    },
+    "children": [
+      "menu-item#quem-somos",
+      "menu-item#seguranca-e-privacidade",
+      "menu-item#regioes-atendidas"
+    ]
+  },
+
+  "menu-item#quem-somos": {
+    "props": {
+      "id": "menu-item-footer",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/quem-somos",
+        "noFollow": false,
+        "tagTitle": "Quem Somos",
+        "text": "Quem Somos"
+      }
+    }
+  },
+
+  "menu-item#seguranca-e-privacidade": {
+    "props": {
+      "id": "menu-item-footer",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/seguranca-e-privacidade",
+        "noFollow": false,
+        "tagTitle": "Segurança e Privacidade",
+        "text": "Segurança e Privacidade"
+      }
+    }
+  },
+
+  "menu-item#regioes-atendidas": {
+    "props": {
+      "id": "menu-item-footer",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/regioes-atendidas",
+        "noFollow": false,
+        "tagTitle": "Regiões Atendidas",
+        "text": "Regiões Atendidas"
+      }
+    }
+  },
+
+  /* Distribuidor */
+  "vtex.menu@2.x:menu#distribuidor": {
+    "props": {
+      "orientation": "vertical",
+      "blockClass": "distribuidor-footer"
+    },
+    "children": [
+      "challenge-block#compra-rapida",
+      "menu-item#seja-um-distribuidor"
+    ]
+  },
+
+  //Compra Rápida
+  "challenge-block#compra-rapida": {
+    "blocks": [
+      "challenge-content#compra-rapida"
+    ]
+  },
+
+  "challenge-content#compra-rapida": {
+    "children": [
+      "menu-item#compra-rapida-footer"
+    ]
+  },
+
+  "menu-item#compra-rapida-footer": {
+    "props": {
+      "id": "menu-item-footer",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/quickorder",
+        "noFollow": false,
+        "tagTitle": "Compra Rápida",
+        "text": "Compra Rápida"
+      }
+    }
+  },
+
+  "menu-item#seja-um-distribuidor": {
+    "props": {
+      "id": "menu-item-footer",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/seja-um-distribuidor",
+        "noFollow": false,
+        "tagTitle": "Seja um Distribuidor",
+        "text": "Seja um Distribuidor"
+      }
+    }
+  },
+
+  // "menu-item#catalogo": {
+  //   "props": {
+  //     "id": "menu-item-footer",
+  //     "type": "custom",
+  //     "iconId": null,
+  //     "highlight": false,
+  //     "itemProps": {
+  //       "type": "internal",
+  //       "href": "/catalogo",
+  //       "noFollow": false,
+  //       "tagTitle": "Catálogo",
+  //       "text": "Catálogo"
+  //     }
+  //   }
+  // },
+
+  /* Dúvidas */
+  "vtex.menu@2.x:menu#duvidas": {
+    "props": {
+      "orientation": "vertical",
+      "blockClass": "duvidas-footer"
+    },
+    "children": [
+      "menu-item#duvidas"
+    ]
+  },
+
+  "menu-item#duvidas": {
+    "props": {
+      "id": "menu-item-footer",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/perguntas-frequentes",
+        "noFollow": false,
+        "tagTitle": "Perguntas Frequentes",
+        "text": "Perguntas Frequentes"
+      }
+    }
+  },
+
+    /* Atendimento */
+  "vtex.menu@2.x:menu#atendimento": {
+    "props": {
+      "orientation": "vertical",
+      "blockClass": "atendimento-footer"
+    },
+    "children": [
+      "menu-item#atendimento",
+      "rich-text#atendimento"
+    ]
+  },
+
+  "menu-item#atendimento": {
+    "props": {
+      "id": "menu-item-footer",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/atendimento",
+        "noFollow": false,
+        "tagTitle": "Fale Conosco",
+        "text": "Fale Conosco"
+      }
+    }
+  },
+
+  "rich-text#atendimento": {
+    "props": {
+      "text": "Atendimento de segunda à sexta das 8h00 às 12h00 e 13h00 às 17h30\ndistribuidor@foreverliss.com.br",
+      "font": "t-small",
+      "blockClass": "atendimento-footer"
+    }
+  },
+
+  /**
+  * Mobile
+  **/
+  /* Footer Mobile */
+  "vtex.menu@2.x:menu#footer-mobile": {
+    "props": {
+      "orientation": "vertical",
+      "blockClass": "footer-mobile"
+    },
+    "children": [
+      "menu-item#institucional-mobile",
+      "menu-item#distribuidor-mobile",
+      "menu-item#duvidas-mobile",
+      "menu-item#atendimento-mobile"
+    ]
+  },
+
+  /* Institucional Mobile */
+  "menu-item#institucional-mobile": {
+    "props": {
+      "id": "menu-item-category-institucional",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "noFollow": true,
+        "tagTitle": "Institucional",
+        "text": "Institucional"
+      }
+    },
+    "blocks": ["vtex.menu@2.x:submenu.accordion#institucional"]
+  },
+  "vtex.menu@2.x:submenu.accordion#institucional": {
+    "children": ["vtex.menu@2.x:menu#institucional-accordion"]
+  },
+
+  "vtex.menu@2.x:menu#institucional-accordion": {
+    "props": {
+      "orientation": "vertical"
+    },
+    "children": [
+      "menu-item#quem-somos",
+      "menu-item#seguranca-e-privacidade"
+    ]
+  },
+
+  /* Distribuidor Mobile */
+  "menu-item#distribuidor-mobile": {
+    "props": {
+      "id": "menu-item-category-distribuidor",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "noFollow": true,
+        "tagTitle": "Distribuidor",
+        "text": "Distribuidor"
+      }
+    },
+    "blocks": ["vtex.menu@2.x:submenu.accordion#distribuidor"]
+  },
+
+  "vtex.menu@2.x:submenu.accordion#distribuidor": {
+    "children": ["vtex.menu@2.x:menu#distribuidor-accordion"]
+  },
+
+  "vtex.menu@2.x:menu#distribuidor-accordion": {
+    "props": {
+      "orientation": "vertical"
+    },
+    "children": [
+      "challenge-block#compra-rapida",
+      "menu-item#seja-um-distribuidor"
+    ]
+  },
+
+  /* Dúvidas Mobile */
+  "menu-item#duvidas-mobile": {
+    "props": {
+      "id": "menu-item-category-duvidas",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "noFollow": true,
+        "tagTitle": "Dúvidas",
+        "text": "Dúvidas"
+      }
+    },
+    "blocks": ["vtex.menu@2.x:submenu.accordion#duvidas"]
+  },
+  "vtex.menu@2.x:submenu.accordion#duvidas": {
+    "children": ["vtex.menu@2.x:menu#duvidas-accordion"]
+  },
+
+  "vtex.menu@2.x:menu#duvidas-accordion": {
+    "props": {
+      "orientation": "vertical"
+    },
+    "children": [
+      "menu-item#duvidas"
+    ]
+  },
+
+  /* Atendimento Mobile */
+  "menu-item#atendimento-mobile": {
+    "props": {
+      "id": "menu-item-category-atendimento",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "noFollow": true,
+        "tagTitle": "Atendimento",
+        "text": "Atendimento"
+      }
+    },
+    "blocks": ["vtex.menu@2.x:submenu.accordion#atendimento"]
+  },
+  "vtex.menu@2.x:submenu.accordion#atendimento": {
+    "children": ["vtex.menu@2.x:menu#atendimento-accordion"]
+  },
+
+  "vtex.menu@2.x:menu#atendimento-accordion": {
+    "props": {
+      "orientation": "vertical"
+    },
+    "children": [
+      "menu-item#atendimento"
+    ]
+  }
+}

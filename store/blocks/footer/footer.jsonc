@@ -1,0 +1,140 @@
+{
+  "footer": {
+    "blocks": [
+      "footer-layout.desktop",
+      "footer-layout.mobile"
+    ]
+  },
+
+  "footer-layout.desktop": {
+    "children": [
+      "flex-layout.row#footer-1-desktop",
+      "flex-layout.row#copyright",
+      "flex-layout.row#footer-3-desktop",
+      "flex-layout.row#tech"
+    ]
+  },
+
+  "flex-layout.row#footer-1-desktop": {
+    "children": [
+      "vtex.menu@2.x:menu#institucional",
+      "vtex.menu@2.x:menu#distribuidor",
+      "vtex.menu@2.x:menu#duvidas",
+      "vtex.menu@2.x:menu#atendimento",
+      "footer-spacer",
+      "social-networks"
+    ],
+    "props": {
+      "blockClass": "menu-row-footer",
+      "paddingTop": 8,
+      "paddingBottom": 8
+    }
+  },
+
+  "social-networks": {
+    "props": {
+      "socialNetworks": [
+        {
+          "name": "Facebook",
+          "url": "https://www.facebook.com/foreverliss"
+        },
+        {
+          "name": "Instagram",
+          "url": "https://www.instagram.com/foreverliss"
+        },
+        {
+          "name": "Youtube",
+          "url": "https://www.youtube.com/channel/UC9HaGh9kp6SwL4YaB436DEQ"
+        }
+      ],
+      "title": "Nossas Redes Sociais",
+      "showInColor": true
+    }
+  },
+
+  "flex-layout.row#footer-3-desktop": {
+    "children": [
+      "rich-text#footer"
+    ],
+    "props": {
+      "blockClass": "credits"
+    }
+  },
+
+  "rich-text#footer": {
+    "props": {
+      "text": "Proibida reprodução total ou parcial. IMPORTANTE! Os preços e estoque sujeitos a alterações e podem variar sem aviso prévio. Em caso de divergência no valor do produto, irá prevalecer sempre o valor do carrinho de compras.\n**FOREVER LISS PROFESSIONAL COMERCIO DE COSMÉTICOS LTDA – EPP** / Rua Fortunato Zillo N° 332, Vila Antonieta II - Lençóis Paulista - SP - CEP: 18681-200 | CNPJ: 30.529.117/0001-28 | Inscrição Estadual: 416.091.574.118",
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER",
+      "textColor": "c-on-disabled",
+      "font": "t-mini"
+    }
+  },
+
+  "flex-layout.row#copyright": {
+    "children": [
+      "rich-text#copyright"
+    ],
+    "props": {
+      "blockClass": "copyright",
+      "paddingBottom": 4
+    }
+  },
+
+  "rich-text#copyright": {
+    "props": {
+      "text": "**2020 www.distribuidorforeverliss.com.br - Todos os direitos reservados.**",
+      "blockClass": "copyright-text",
+      "textColor": "c-on-disabled",
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER",
+      "font": "t-mini"
+    }
+  },
+
+  "flex-layout.row#tech": {
+    "children": [
+      "image#logo-vtex"
+    ],
+    "props": {
+      "blockClass": "logo-vtex",
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER"
+    }
+  },
+
+  "image#logo-vtex" : {
+    "props" : {
+      "src" : "https://brand.vtex.com/static/media/VTEX_pink_RGB.751a9fb5.svg",
+      "blockClass": "tech-image",
+      "link": "https://vtex.io",
+      "alt": "Logo Vtex",
+      "title": "Vtex",
+      "maxWidth": 100
+    }
+  },
+
+  /**
+  * Mobile
+  **/
+  "footer-layout.mobile": {
+    "children": [
+      "flex-layout.row#1-footer-mobile",
+      "social-networks",
+      "flex-layout.row#copyright",
+      "flex-layout.row#footer-3-desktop",
+      "flex-layout.row#tech"
+    ]
+  },
+
+  "flex-layout.row#1-footer-mobile": {
+    "children": [
+      "vtex.menu@2.x:menu#footer-mobile"
+    ],
+    "props": {
+      "blockClass": "nav-footer-mobile",
+      "paddingTop": 6,
+      "paddingBottom": 6
+    }
+  }
+}

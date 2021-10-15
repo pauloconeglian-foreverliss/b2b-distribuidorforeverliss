@@ -1,0 +1,24 @@
+.challengeContentWrapper :global(.vtex-flex-layout-0-x-flexRow){
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+}
+
+.challengeContentWrapper--cc-search-top {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
+.challengeContentWrapper {
+  max-width: 100%;
+  margin: 0;
+}
+
+.challengeContentWrapper--buyButtonCta {
+  max-width: 100%;
+  margin: 1rem 0 0 0;
+}
+
+.challengeContentWrapper--minicart-header {
+  display: flex;
+}

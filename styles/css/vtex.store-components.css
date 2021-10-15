@@ -1,0 +1,271 @@
+:global(.vtex-my-orders-app-3-x-cancelBtn) {
+  display: none !important;
+}
+
+:global(.vtex-button):hover {
+  /*background-color: transparent !important;*/
+}
+
+/* temporário, enquanto app vtex.quickorder 2.x não é disponibilizada */
+:global(.vtex-quickorder-0-x-container) {
+  max-width: 96rem;
+  margin: 0 auto;
+}
+
+.notificationBarContainer {
+  background-color: #e6f1e6;
+  color: #03034e;
+  font-weight: 700;
+  font-size: 12px;
+  text-decoration: underline;
+}
+
+
+/**
+* Especificações página produto = /Quatidade Caixa
+**/
+.specificationsTableContainer--quantidade-caixa {
+  margin: 0.5rem 0 !important;
+  padding-left: 0;
+}
+
+.specificationsTitle--quantidade-caixa,
+.specificationsTableHead--quantidade-caixa {
+  display: none;
+}
+
+.specificationsTablePropertyHeading--quantidade-caixa {
+  padding: 0 !important;
+}
+
+.specificationItemProperty--quantidade-caixa,
+.specificationItemSpecifications--quantidade-caixa {
+  padding: 10px 0 10px 22px;
+  font-size: 0.9rem;
+  border: none;
+  color: white;
+  width: auto;
+}
+
+.specificationItemProperty--quantidade-caixa:first-child::after {
+  content: ":";
+}
+
+.specificationItemSpecifications--quantidade-caixa {
+  padding: 0 0 0 4px;
+}
+
+
+.specificationItemProperty--quantidade-caixa {
+  background-image: url("https://storecomponents.vteximg.com.br/arquivos/box.png");
+  background-position: left center;
+  background-repeat: no-repeat;
+  background-size: 12%;
+}
+
+.specificationsTable--quantidade-caixa {
+  background-color: #870036;
+  display: inline-block;
+  border-radius: 3px;
+  border-spacing: 0;
+  padding: 0 10px;
+  width: auto;
+}
+
+.specificationsTable--quantidade-caixa,
+.specificationsTableBody--quantidade-caixa {
+  border-spacing: 0 !mportant;
+}
+
+
+/**
+* Página Pedidos
+**/
+.logoContainer--logo-pedidos {
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 1rem;
+  min-width: 100%;
+  display: flex;
+}
+
+
+/**
+* Searchbar container header
+**/
+/* remove margin bottom da classe utilizada também no formulário de cadastro */
+.searchBarContainer :global(.vtex-input-prefix__group) {
+  margin-bottom: unset !important;
+}
+
+.searchBarContainer :global(.vtex-styleguide-9-x-input) {
+  max-width: 208px;  ;
+}
+
+.searchBarContainer {
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+}
+
+.infoCardContainer--info-card-home {
+  max-width: 1520px;
+  margin: 0 auto;
+  background-color: #e6f1e6;
+  padding: 0px;
+}
+
+/**
+* Logo Header Desktop
+**/
+.logoImage--logo-header-desktop {
+  display: block;
+}
+
+.logoContainer {
+  padding: 0;
+  max-height: unset;
+}
+
+
+/**
+* Newsletter block
+**/
+.newsletter {
+  background-color: #870036;
+  width: 100%;
+  margin-top: 2rem;
+}
+
+.newsletter .label {
+  font-size: 1.6rem;
+  font-weight: 400;
+  position: relative;
+}
+
+.newsletter .label::before {
+  content: "";
+  background: url(/assets/vtex/assets-builder/vtex.store-theme/3.37.0/icon-newsletter.png) bottom center no-repeat;
+  background-size: 80%;
+  width: 40px;
+  height: 30px;
+  margin: 0 10px 0 0;
+  display: inline-block;
+}
+
+.newsletter .form .inputGroup {
+  padding: 0;
+  margin: 15px 0 0 0;
+  display: flex;
+  color: #fff;
+}
+
+.newsletter .form .buttonContainer {
+  padding: 0;
+  margin: 0;
+}
+
+.newsletter .inputGroup :global(.vtex-styleguide-9-x-hideDecorators) {
+  border-radius: 3px 0px 0px 3px;
+  background-color: #fff;
+  height: 45px;
+  color: #2E2E2E;
+  border: none;
+  margin: 0;
+}
+
+.newsletter .inputGroup :global(.vtex-styleguide-9-x-hideDecorators)::placeholder {
+  color: #777;
+  font-size: 16px;
+}
+
+.newsletter .inputGroup :global(.vtex-input-prefix__group) {
+  border: none !important;
+  min-height: 50px;
+  border-radius: 0;
+}
+
+.newsletter .inputGroup :global(.vtex-button) {
+  border-radius: 0px 3px 3px 0px;
+  background-color: #FFB100;
+  margin: 0 0 0 1px;
+  min-height: 45px;
+  color: #2E2E2E;
+  border: none;
+}
+
+
+/**
+* Logo Vtex
+**/
+.imageElementLink--tech-image {
+  max-width: 100px;
+}
+
+.label {
+  color: #fff;
+  font-size: 26px;
+}
+
+.imageElement--storePrint {
+  max-height: 300px;
+  margin-bottom: 20px;
+}
+
+.skuSelectorContainer {
+  margin: 1rem 0;
+}
+
+
+@media screen and (max-width: 1025px) {
+  /**
+  * Logo Header Mobile
+  **/
+  .logoImage--logo-header-mobile {
+    display: block;
+  }
+}
+
+
+@media only screen and (min-width: 640px) {
+  .label {
+    font-size: 40px;
+  }
+
+  .infoCardContainer--info-card-home .infoCardTextContainer {
+    width: 30%;
+  }
+
+  .infoCardContainer--info-card-home .infoCardImageContainer {
+    width: 70%;
+  }
+
+  .imageElement--storePrint {
+    margin-bottom: 0px;
+    max-height: 600px;
+  }
+}
+
+.productImagesContainer--quickview .carouselContainer {
+  justify-content: flex-start;
+}
+
+.productImagesContainer--quickview .productImageTag {
+  object-fit: cover !important;
+}
+
+.productImagesContainer--quickview .carouselGaleryThumbs {
+  display: none;
+}
+
+.productImagesContainer--quickview .carouselGaleryCursor {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
+.productNameContainer {
+  color: #3f3f40;
+  font-weight: bold;
+  font-size: 30px;
+}

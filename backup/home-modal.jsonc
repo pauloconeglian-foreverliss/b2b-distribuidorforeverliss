@@ -1,0 +1,274 @@
+{
+  "store.home": {
+    "children": [
+      "modal-trigger#aviso"
+    ],
+    "blocks": [
+      "list-context.image-list#fullbanner",
+      /*"__fold__.experimentalLazyAssets",*/
+      /*"flex-layout.row#deals",*/
+      "slider-layout#deals",
+      /*"rich-text#shelf-title",*/
+      /*"flex-layout.row#shelf",*/
+      "rich-text#vantagens-title",
+      "flex-layout.row#vantagens",
+      "newsletter"
+    ]
+  },
+
+  /* Modal Home */
+  "modal-trigger#aviso": {
+    "children": [
+      "modal-layout#aviso"
+    ],
+    "props": {
+      "trigger": "load"
+    }
+  },
+
+  "modal-layout#aviso": {
+    "children": [
+      "modal-header",
+      "rich-text#modal-content",
+      "overlay-trigger"
+    ],
+    "props": {
+      "blockClass": "modalAvisoHome"
+    }
+  },
+
+  "modal-header": {
+    "children": [
+      "rich-text#modal-title"
+    ]
+  },
+
+  "rich-text#modal-title": {
+    "props": {
+      "text": "##### Bem-vindo(a) à loja virtual para revendedores Forever Liss"
+    }
+  },
+
+  "rich-text#modal-content": {
+    "props": {
+      "text": "De qual estado você é?",      
+      "blockClass": "modalTextContent"
+    }
+  },
+
+  "overlay-trigger": {
+    "children": [
+      "rich-text#question",
+      "overlay-layout"
+    ],
+    "props": {
+      "blockClass": "dropdownState"
+    }
+  },
+  
+  "rich-text#question": {
+    "props": {
+      "text": "**Selecione**",
+      "blockClass": "stateOptions"
+    }
+  },
+  
+  "overlay-layout": {
+    "props": {
+      "placement": "bottom"
+    },
+    "children": [
+      "modal-actions.close#ba",
+      "modal-actions.close#ce",
+      "modal-actions.close#es",
+      "modal-actions.close#mg",
+      "modal-actions.close#sc",
+      "modal-actions.close#se",
+      "modal-actions.close#sp",
+      "rich-text#item"
+    ]
+  },  
+
+  "modal-actions.close#ba": {
+    "props": {
+      "label": "Bahia",
+      "blockClass": "stateItems"
+    }
+  },
+
+  "modal-actions.close#ce": {
+    "props": {
+      "label": "Ceará",
+      "blockClass": "stateItems"
+    }
+  },
+
+  "modal-actions.close#es": {
+    "props": {
+      "label": "Espírito Santo",
+      "blockClass": "stateItems"
+    }
+  },
+
+  "modal-actions.close#mg": {
+    "props": {
+      "label": "Minas Gerais",
+      "blockClass": "stateItems"
+    }
+  },
+
+  "modal-actions.close#sc": {
+    "props": {
+      "label": "Santa Catarina",
+      "blockClass": "stateItems"
+    }
+  },
+
+  "modal-actions.close#se": {
+    "props": {
+      "label": "Sergipe",
+      "blockClass": "stateItems"
+    }
+  },
+
+  "modal-actions.close#sp": {
+    "props": {
+      "label": "São Paulo",
+      "blockClass": "stateItems"
+    }
+  },
+  
+  "rich-text#item": {
+    "props": {
+      "text": "[Outros](http://pedidos.distribuidorforeverliss.com.br/seja-distribuidor)",
+      "blockClass": "stateItems"
+    }
+  },
+
+  // "rich-text#button-redirect": {
+  //   "props": {
+  //     "text": "[Outros](http://pedidos.distribuidorforeverliss.com.br/seja-distribuidor)",
+  //     "blockClass": "btnModalRedirect"
+  //   }
+  // },
+
+
+  "shelf#home": {
+    "blocks": ["product-summary.shelf"]
+  },
+
+  "list-context.image-list#fullbanner": {
+    "children": ["slider-layout#fullbanner-images"],
+    "props": {
+      "height": 720,
+      "images": [
+        {
+          "image": "assets/fullbanner-distribuidor-forever-liss-03.jpg",
+          "mobileImage": "assets/fullbanner-distribuidor-forever-liss-03.jpg",
+          "link": {
+            "url": "/seja-um-distribuidor",
+            "title": "Veja como ser um distribuidor"
+          }
+        }
+      ]
+    }
+  },
+
+  "slider-layout#fullbanner-images": {
+    "props": {
+      "itemsPerPage": {
+        "desktop": 1,
+        "tablet": 1,
+        "phone": 1
+      },
+      "infinite": true,
+      "showNavigationArrows": "desktopOnly",
+      "blockClass": "carousel"
+    }
+  },
+
+  /*"rich-text#shelf-title": {
+    "props": {
+      "text": "## Destaques",
+      "blockClass": "shelfTitle"
+    }
+  },
+
+  "flex-layout.row#shelf": {
+    "children": ["list-context.product-list#vitrine01"]
+  },
+
+  "list-context.product-list#vitrine01": {
+    "blocks": ["product-summary.shelf"],
+    "children": ["slider-layout#vitrine01-products"],
+    "props": {
+      "orderBy": "OrderByTopSaleDESC"
+    }
+  },
+
+  "slider-layout#vitrine01-products": {
+    "props": {
+      "itemsPerPage": {
+        "desktop": 5,
+        "tablet": 3,
+        "phone": 1
+      },
+      "infinite": true,
+      "fullWidth": false,
+      "blockClass": "shelf"
+    }
+  },*/
+
+  "rich-text#vantagens-title": {
+    "props": {
+      "text": "## Seja um distribuidor autorizado\nFaça parte do ramo que mais cresce no mundo com a **Forever Liss Professional**.",
+      "blockClass": "vantagens-title"
+    }
+  },
+
+  "flex-layout.row#vantagens": {
+    "children": [
+      "flex-layout.col#vantagens-col1",
+      "flex-layout.col#vantagens-col2"
+    ],
+    "props": {
+      "blockClass": "vantagens"
+    }
+  },
+
+  "flex-layout.col#vantagens-col1": {
+    "children": [
+      "rich-text#vantagens-text1"
+    ]
+  },
+
+  "flex-layout.col#vantagens-col2": {
+    "children": [
+      "rich-text#vantagens-text2"
+    ]
+  },
+
+  "rich-text#vantagens-text1": {
+    "props": {
+      "text": "* Baixo investimento inicial e retorno rápido (parcelado).\n* Facilidade na forma de pagamento\n* Produtos de qualidade comprovada, produzidos com matéria-prima importada e nacional, rigorosamente de acordo com as normas da ANVISA e Ministério da Saúde.\n* Alta rentabilidade.\n* Atendimento personalizado ao distribuidor.",
+      "font": "t-heading-5",
+      "blockClass": "vantagens-text"
+    }
+  },
+
+  "rich-text#vantagens-text2": {
+    "props": {
+      "text": "* Indústria com equipamentos altamente tecnológicos.\n* Ações promocionais que visam o fortalecimento da marca e divulgação dos produtos em nível nacional e âmbito mundial.\n* Publicidade nos principais veículos especializados.\n* Apoio de material publicitário.\nFacilidade de negociação nas compras.\n\n[Veja como ser um Distribuidor](/seja-um-distribuidor)",
+      "font": "t-heading-5",
+      "blockClass": "vantagens-text"
+    }
+  },
+
+  "newsletter": {
+    "props": {
+      "label": "Não perca nenhuma novidade",
+      "placeholder": "Seu e-mail de contato",
+      "submit": "OK"
+    }
+  }
+}

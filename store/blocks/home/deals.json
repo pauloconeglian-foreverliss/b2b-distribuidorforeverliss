@@ -1,0 +1,42 @@
+{
+  "slider-layout#deals": {
+    "children": [
+      "rich-text#deals1",
+      "rich-text#deals2",
+      "rich-text#deals3",
+      "rich-text#deals4"
+    ],
+    "props": {
+      "blockClass": "deals-slider",
+      "showPaginationDots": "never"
+    }
+  },
+
+  "rich-text#deals1": {
+    "props": {
+      "text": "![Ícone frete grátis](https://storecomponents.vteximg.com.br/arquivos/box.png)\n[Regiões Atendidas](/regioes-atendidas)",
+      "blockClass": "deals"
+    }
+  },
+
+  "rich-text#deals2": {
+    "props": {
+      "text": "![Ícone entrega](https://storecomponents.vteximg.com.br/arquivos/delivery-fast.png)\nEntrega Garantida",
+      "blockClass": "deals"
+    }
+  },
+
+  "rich-text#deals3": {
+    "props": {
+      "text": "![Ícone retirada](https://storecomponents.vteximg.com.br/arquivos/store.png)\nDireto da Fábrica",
+      "blockClass": "deals"
+    }
+  },
+
+  "rich-text#deals4": {
+    "props": {
+      "text": "![Ícone ofertas](https://storecomponents.vteximg.com.br/arquivos/coupon.png)\nOfertas Exclusivas",
+      "blockClass": "deals"
+    }
+  }
+}

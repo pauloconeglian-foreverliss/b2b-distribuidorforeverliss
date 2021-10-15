@@ -1,0 +1,67 @@
+.buttonShowMore {
+  padding-left: 4.5rem;
+  padding-right: 0.8rem;
+  margin-bottom: 1rem;
+  max-width: 370px;
+  margin-top: 1rem;
+  display: block;
+  width: 100%;
+}
+
+.buttonShowMore :global(.vtex-button) {
+  transition: all 0.2s ease-in-out;
+  background-color: #d4d4d4;
+  border: 1px solid #ebebeb;
+  outline: none !important;
+  justify-content: center;
+  align-items: center;
+  min-height: 45px;
+  padding: 0.45rem;
+  font-weight: 700;
+  font-size: 1rem;
+  color: #4e4e4e;
+  display: flex;
+  width: 100%;
+}
+
+.buttonShowMore :global(.vtex-button)::before {
+  transform: rotate(90deg);
+  display: inline-block;
+  position: relative;
+  font-size: 1.3rem;
+  content: "\279C";
+}
+
+.buttonShowMore :global(.vtex-button)::after {
+  transform: rotate(90deg);
+  display: inline-block;
+  position: relative;
+  font-size: 1.3rem;
+  content: "\279C";
+}
+
+.buttonShowMore :global(.vtex-button):hover {
+  background-color: #F1F1F1;
+  color: #999;
+}
+
+@media screen and (max-width: 1025px) {
+  .buttonShowMore {
+    padding-left: 4.6rem;
+    padding-right: 1rem;
+  }
+}
+
+@media screen and (max-width: 1023px) {
+  .buttonShowMore {
+    padding-left: 0.8rem;
+    padding-right: 0.8rem;
+  }
+}
+
+@media screen and (max-width: 783px) {
+  .buttonShowMore {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}

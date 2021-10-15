@@ -1,0 +1,51 @@
+.sliderLayoutContainer {
+  justify-content: center;
+}
+.sliderLayoutContainer--carousel {
+  background-color: #f9f9fb;
+}
+
+.sliderTrackContainer {
+  max-width: 1520px;
+}
+
+.paginationDotsContainer {
+  margin-top: .5rem;
+  margin-bottom: .5rem;
+}
+
+.layoutContainer--shelf {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  max-width: 96rem;
+}
+
+.slide--shelf {
+  margin-bottom: 25px;
+  padding-left: .5rem;
+  padding-right: .5rem;
+}
+
+.paginationDot {
+  background-color: #AAA;
+}
+
+.paginationDot--isActive {
+  background-color: #870036;
+}
+
+.imageElement {
+  display: block;
+}
+
+/**
+* Deals Home
+**/
+.sliderLayoutContainer--deals-slider {
+  background-color: #030e21;
+  padding: 1rem 0;
+}
+
+.caretIcon--deals-slider {
+  fill: #ffffff;
+}

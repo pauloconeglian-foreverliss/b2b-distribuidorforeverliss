@@ -1,0 +1,391 @@
+{
+  "form": {
+    "children": [
+      "flex-layout.row#nome-sobrenome",
+      "flex-layout.row#email-fone",
+      "form-input.checkbox#empresa",
+      "form-input.text#razao-social",
+      "form-input.text#nome-fantasia",
+      "flex-layout.row#inscestad-cnpj",
+      "form-input.text#nome-endereco",
+      "form-input.dropdown#tipo-endereco",
+      "form-input.text#rua",
+      "flex-layout.row#numero-complemento",
+      "flex-layout.row#bairro-cidade",
+      "flex-layout.row#cep-estado",
+      "flex-layout.row#referencia-responsavel",
+      "form-submit"
+    ],
+    "blocks": [
+      "form-success"
+    ],
+    "props": {
+      "entity": "Registro",
+      "schema": "registrocliente",
+      "blockClass": "form-cadastro"
+    }
+  },
+
+  /**
+  * Form success block
+  **/
+  "form-success": {
+    "children": [
+      "rich-text#successSubmit"
+    ]
+  },
+
+  "rich-text#successSubmit": {
+    "props": {
+      "text": "### Cadastro Realizado!\nEnviamos seus dados para analise, agora é só aguardar a aprovação. O prazo para analise do cadastro pode levar até 10 dias úteis. Você será informado via e-mail sobre a avaliação e aprovação.\n**Pedimos gentilmente que aguarde nosso contato**.",
+      "textAlignment": "LEFT",
+      "textPosition": "CENTER",
+      "blockClass": "successSubmit"
+    }
+  },
+
+  /**
+  * Dados pessoais
+  **/
+  /* Nome / Sobrenome */
+  "flex-layout.row#nome-sobrenome": {
+    "children": [
+      "flex-layout.col#nome-col",
+      "flex-layout.col#sobrenome-col"
+    ]    ,
+    "props": {
+      "blockClass": "form-cadastro-row"
+    }
+  },
+
+  "flex-layout.col#nome-col": {
+    "children": [
+      "form-input.text#nome"
+    ],
+    "props": {
+      "paddingRight": 2
+    }
+  },
+
+  "flex-layout.col#sobrenome-col": {
+    "children": [
+      "form-input.text#sobrenome"
+    ],
+    "props": {
+      "paddingLeft": 2
+    }
+  },
+
+  "form-input.text#nome": {
+    "props": {
+      "pointer": "#/properties/firstName"
+    }
+  },
+
+  "form-input.text#sobrenome": {
+    "props": {
+      "pointer": "#/properties/lastName"
+    }
+  },
+
+  /* Email / Fone */
+  "flex-layout.row#email-fone": {
+    "children": [
+      "flex-layout.col#email-col",
+      "flex-layout.col#fone-col"
+    ],
+    "props": {
+      "blockClass": "form-cadastro-row"
+    }
+  },
+
+  "flex-layout.col#email-col": {
+    "children": [
+      "form-input.text#email"
+    ],
+    "props": {
+      "paddingRight": 2
+    }
+  },
+
+  "flex-layout.col#fone-col": {
+    "children": [
+      "form-input.text#fone"
+    ],
+    "props": {
+      "paddingLeft": 2
+    }
+  },
+
+  "form-input.text#email": {
+    "props": {
+      "pointer": "#/properties/email"
+    }
+  },
+
+  "form-input.text#fone": {
+    "props": {
+      "pointer": "#/properties/homePhone",
+      "label": "Telefone (Formato: +5514999999999)"
+    }
+  },
+
+  /* isCorporate */
+  "form-input.checkbox#empresa": {
+    "props": {
+      "pointer": "#/properties/isCorporate"
+    }
+  },
+
+  /* Razão Social */
+  "form-input.text#razao-social": {
+    "props": {
+      "pointer": "#/properties/corporateName"
+    }
+  },
+
+  /* Nome Fantasia */
+  "form-input.text#nome-fantasia": {
+    "props": {
+      "pointer": "#/properties/tradeName"
+    }
+  },
+
+  /* Inscrição Estadual e CNPJ */
+  "flex-layout.row#inscestad-cnpj": {
+    "children": [
+      "flex-layout.col#insc-col",
+      "flex-layout.col#cnpj-col"
+    ],
+    "props": {
+      "blockClass": "form-cadastro-row"
+    }
+  },
+
+  "flex-layout.col#insc-col": {
+    "children": [
+      "form-input.text#insc"
+    ],
+    "props": {
+      "paddingRight": 2
+    }
+  },
+
+  "flex-layout.col#cnpj-col": {
+    "children": [
+      "form-input.text#cnpj"
+    ],
+    "props": {
+      "paddingLeft": 2
+    }
+  },
+
+  "form-input.text#insc": {
+    "props": {
+      "pointer": "#/properties/stateRegistration"
+    }
+  },
+
+  "form-input.text#cnpj": {
+    "props": {
+      "pointer": "#/properties/corporateDocument",
+      "label": "CNPJ (Formato: 99999999999999 - 14 dígitos)"
+    }
+  },
+
+  /**
+  * Address Stuff
+  **/
+  "form-input.text#nome-endereco": {
+    "props": {
+      "pointer": "#/properties/addressName"
+    }
+  },
+
+  "form-input.dropdown#tipo-endereco": {
+    "props": {
+      "pointer": "#/properties/addressType"
+    }
+  },
+
+  /* CEP e Estado */
+  "flex-layout.row#cep-estado": {
+    "children": [
+      "flex-layout.col#cep-col",
+      "flex-layout.col#estado-col"
+    ],
+    "props": {
+      "blockClass": "form-cadastro-row"
+    }
+  },
+
+  "flex-layout.col#cep-col": {
+    "children": [
+      "form-input.text#cep"
+    ],
+    "props": {
+      "paddingRight": 2
+    }
+  },
+
+  "flex-layout.col#estado-col": {
+    "children": [
+      "form-input.dropdown#estado"
+    ],
+    "props": {
+      "paddingLeft": 2
+    }
+  },
+
+  "form-input.text#cep": {
+    "props": {
+      "pointer": "#/properties/postalCode",
+      "label": "CEP (Formato: 99999-999)"
+    }
+  },
+
+  "form-input.dropdown#estado": {
+    "props": {
+      "pointer": "#/properties/state"
+    }
+  },
+
+  /* Bairro e Cidade */
+  "flex-layout.row#bairro-cidade": {
+    "children": [
+      "flex-layout.col#bairro-col",
+      "flex-layout.col#cidade-col"
+    ],
+    "props": {
+      "blockClass": "form-cadastro-row"
+    }
+  },
+
+  "flex-layout.col#bairro-col": {
+    "children": [
+      "form-input.text#bairro"
+    ],
+    "props": {
+      "paddingRight": 2
+    }
+  },
+
+  "flex-layout.col#cidade-col": {
+    "children": [
+      "form-input.text#cidade"
+    ],
+    "props": {
+      "paddingLeft": 2
+    }
+  },
+
+  "form-input.text#bairro": {
+    "props": {
+      "pointer": "#/properties/neighborhood"
+    }
+  },
+
+  "form-input.text#cidade": {
+    "props": {
+      "pointer": "#/properties/city"
+    }
+  },
+
+  /* Rua */
+  "form-input.text#rua": {
+    "props": {
+      "pointer": "#/properties/street"
+    }
+  },
+
+  /* Número e Complemento */
+  "flex-layout.row#numero-complemento": {
+    "children": [
+      "flex-layout.col#numero-col",
+      "flex-layout.col#complemento-col"
+    ],
+    "props": {
+      "blockClass": "form-cadastro-row"
+    }
+  },
+
+  "flex-layout.col#numero-col": {
+    "children": [
+      "form-input.text#numero"
+    ],
+    "props": {
+      "paddingRight": 2
+    }
+  },
+
+  "flex-layout.col#complemento-col": {
+    "children": [
+      "form-input.text#complemento"
+    ],
+    "props": {
+      "paddingLeft": 2
+    }
+  },
+
+  "form-input.text#numero": {
+    "props": {
+      "pointer": "#/properties/number"
+    }
+  },
+
+  "form-input.text#complemento": {
+    "props": {
+      "pointer": "#/properties/complement"
+    }
+  },
+
+  /* Referencia e Responsável */
+  "flex-layout.row#referencia-responsavel": {
+    "children": [
+      "flex-layout.col#referencia-col",
+      "flex-layout.col#responsavel-col"
+    ],
+    "props": {
+      "blockClass": "form-cadastro-row"
+    }
+  },
+
+  "flex-layout.col#referencia-col": {
+    "children": [
+      "form-input.text#referencia"
+    ],
+    "props": {
+      "paddingRight": 2
+    }
+  },
+
+  "flex-layout.col#responsavel-col": {
+    "children": [
+      "form-input.text#responsavel"
+    ],
+    "props": {
+      "paddingLeft": 2
+    }
+  },
+
+  "form-input.text#referencia": {
+    "props": {
+      "pointer": "#/properties/reference"
+    }
+  },
+
+  "form-input.text#responsavel": {
+    "props": {
+      "pointer": "#/properties/receiverName"
+    }
+  },
+
+  /**
+  * Form submit button text
+  **/
+  "form-submit": {
+    "props": {
+      "label": "Enviar Cadastro"
+    }
+  }
+}

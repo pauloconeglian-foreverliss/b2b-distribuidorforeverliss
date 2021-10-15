@@ -1,0 +1,44 @@
+{
+  "store.custom#quem-somos": {
+    "blocks": [
+      "flex-layout.row#quem-somos-row",
+      "newsletter"
+    ]
+  },
+
+  "flex-layout.row#quem-somos-row": {
+    "children": [
+      "flex-layout.col#pages-menu",
+      "flex-layout.col#text-quem-somos"
+    ],
+    "props": {
+      "blockClass": "institucional-row",
+      "paddingTop": 8,
+      "paddingBottom": 8
+    }
+  },
+
+  "flex-layout.col#text-quem-somos": {
+    "children": [
+      "rich-text#title-quem-somos",
+      "rich-text#quem-somos-text"
+    ],
+    "props": {
+      "preventVerticalStretch": true
+    }
+  },
+
+    "rich-text#title-quem-somos": {
+      "props": {
+        "text": "# Quem Somos",
+        "blockClass": "title-pages"
+      }
+    },
+
+    "rich-text#quem-somos-text": {
+      "props": {
+        "text": "A **Forever Liss Professional**, empresa especializada em desenvolver produtos Profissionais para Cabelo, alia tecnologia e resultado oferecendo tratamento de alto desempenho com qualidade segurança que trazem sempre uma solução para os profissionais. Conhecida e com ótima aceitação nos salões de beleza, os produtos Forever Liss Professional você pode encontrar tanto na internet em lojas especializadas ou com nossos distribuidores de todo o Brasil.\n\nA **Forever Liss Professional** preocupada nos interesses e necessidades de nossos clientes conta com uma equipe com profissionais em diversas áreas como Técnicos para testar e aprovar nossos produtos indo com a mais alta qualidade possível, atendimento rápido e prático com o cliente, Logística super bem preparada com o mais alto estoque e segurança para despachar a mercadoria. Nosso desejo é superar as expectativas do mercado profissional e inovar sempre trazendo produtos legalizados que atendem a todas as especificações da Anvisa, além da qualidade que realmente proporciona resultado e muda a vida de nossos clientes com o que há de mais moderno e sofisticado tendo a preocupação junto ao meio ambiente e saúde de nossos clientes a preços justos.\n\nSe quiser saber alguma informação mais detalhada sobre nossos produtos, consulte um de nossos vendedores através da loja virtual ou nos ligue.\n\n**Forever Liss Professional líder no segmento de distribuição online de Cosméticos Profissionais**",
+        "blockClass": "about"
+      }
+    }
+}

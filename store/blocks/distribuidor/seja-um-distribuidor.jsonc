@@ -1,0 +1,324 @@
+{
+  "store.custom#seja-um-distribuidor": {
+    "blocks": [
+      "flex-layout.row#seja-um-distribuidor-row",
+      "flex-layout.row#como-revender-titulo",
+      "flex-layout.row#como-revender-conteudo-row",
+      "flex-layout.row#motivos-titulo",
+      "flex-layout.row#motivos-conteudo-row",
+      "flex-layout.row#formas-pagamento-titulo",
+      "flex-layout.row#formas-pagamento-row",
+      "flex-layout.row#como-titulo",
+      "flex-layout.row#como-row",
+      "flex-layout.row#sobre-titulo",
+      "flex-layout.row#sobre-row",
+      "newsletter"
+    ]
+  },
+
+  "flex-layout.row#seja-um-distribuidor-row": {
+    "children": [
+      "flex-layout.col#banner-um-distribuidor-col"
+    ],
+    "props": {
+      "blockClass": "banner-distribuidor-row",
+      "fullWidth": true
+    }
+  },
+
+  "flex-layout.col#banner-um-distribuidor-col": {
+    "children": [
+      "rich-text#ctas-banner-distribuidor",
+      "image#banner-distribuidor-desktop",
+      "image#banner-distribuidor-mobile"
+    ],
+    "props": {
+      "blockClass": "banner-distribuidor-col"
+    }
+  },
+
+  "image#banner-distribuidor-desktop": {
+    "props": {
+      "src": "assets/banner-seja-um-distribuidor.png",
+      "alt": "banner Seja um Distribuidor Forever Liss",
+      "blockClass": "banner-distribuidor-desktop"
+    }
+  },
+
+  "image#banner-distribuidor-mobile": {
+    "props": {
+      "src": "assets/banner-seja-um-distribuidor-mobile.png",
+      "alt": "banner Seja um Distribuidor Forever Liss",
+      "blockClass": "banner-distribuidor-mobile",
+      "link": {
+        "url": "/cadastro",
+        "title": "Seja agora um revendedor autorizado Forever Liss"
+      }
+    }
+  },
+
+  "rich-text#ctas-banner-distribuidor": {
+    "props": {
+      "blockClass": "ctas",
+      "text": "[Sou lojista/autônomo](/cadastro) [Sou distribuidor](/cadastro)"
+    }
+  },
+
+  /* Como revender */
+  "flex-layout.row#como-revender-titulo": {
+    "children": [ "rich-text#como-revender-titulo" ]
+  },
+
+  "rich-text#como-revender-titulo": {
+    "props": {
+      "text": "# Como Revender Forever Liss",
+      "blockClass": "titulo-seja-um-distribuidor"
+    }
+  },
+
+  "flex-layout.row#como-revender-conteudo-row": {
+    "children": [
+      "flex-layout.col#cv01",
+      "flex-layout.col#cv02",
+      "flex-layout.col#cv03"
+    ],
+    "props": {
+      "colGap": 6
+    }
+  },
+
+  "flex-layout.col#cv01": {
+    "children": [ "rich-text#ccv01",  "rich-text#ccv01-cta"],
+    "props": {
+      "blockClass": "como-revender-texto"
+    }
+  },
+
+  "flex-layout.col#cv02": {
+    "children": [ "rich-text#ccv02" ],
+    "props": {
+      "blockClass": "como-revender-texto"
+    }
+  },
+
+  "flex-layout.col#cv03": {
+    "children": [ "rich-text#ccv03" ],
+    "props": {
+      "blockClass": "como-revender-texto"
+    }
+  },
+
+  "rich-text#ccv01": {
+    "props": {
+      "text": "![Ícone Usuário](https://distribuidorforeverliss.vtexassets.com/assets/vtex/assets-builder/distribuidorforeverliss.store-theme/1.0.2/icon-user.png)\n### 1. Faça seu cadastro\n**Venda exclusiva para CNPJ, não sendo permitida vendas para CPF ou CNPJ sem IE (MEI).**\nMais informações, como condição comerciais, serão disponibilizadas após o cadastro aprovado e concluído.",
+      "blockClass": "ccv-text"
+    }
+  },
+
+  "rich-text#ccv01-cta": {
+    "props": {
+      "text": "Seja agora um revendedor autorizado\n[quero revender!](/cadastro)",
+      "blockClass": "ccv01-cta"
+    }
+  },
+
+  "rich-text#ccv02": {
+    "props": {
+      "text": "![Ícone Relógio](https://distribuidorforeverliss.vtexassets.com/assets/vtex/assets-builder/distribuidorforeverliss.store-theme/1.0.2/icon-clock.png)\n### 2. Aguarde a aprovação\nO tempo para avaliação e validação do cadastro pode levar até 10 dias úteis. Portanto, pedimos que aguarde este prazo, antes de realizar novo chamado. Pedido são feitos aqui no portal do distribuidor, com o login e a senha, após sua ficha cadastral ser analisada e aprovada.",
+      "blockClass": "ccv-text"
+    }
+  },
+
+  "rich-text#ccv03": {
+    "props": {
+      "text": "![Ícone Carrinho](https://distribuidorforeverliss.vtexassets.com/assets/vtex/assets-builder/distribuidorforeverliss.store-theme/1.0.2/icon-cart.png)\n### 3. Cadastro liberado? Hora de escolher os seus queridinhos!\n* Pedido mínimo de R$ 800,00\n\n* Pagamento: à vista no boleto bancário ou no cartão de crédito, em até 6x.",
+      "blockClass": "ccv-text"
+    }
+  },
+
+  /* 5 Motivos para revernder Forever Liss */
+  "flex-layout.row#motivos-titulo": {
+    "children": [ "rich-text#motivos-titulo" ]
+  },
+
+  "rich-text#motivos-titulo": {
+    "props": {
+      "text": "## 5 Motivos para revender Forever Liss",
+      "blockClass": "titulo-seja-um-distribuidor"
+    }
+  },
+
+  "flex-layout.row#motivos-conteudo-row": {
+    "children": [ "rich-text#motivos-conteudo" ]
+  },
+
+  "rich-text#motivos-conteudo": {
+    "props": {
+      "text": "* **MARCA DE COSMÉTICOS COM GRANDE CRESCIMENTO NO MERCADO** - A marca FOREVER LISS carrega uma verdadeira paixão, alcançada nas brasileiras. Além dos mais de 3 milhões de seguidores ativos nas redes sociais, nossos vídeos no Youtube divulgando os produtos chegam a alcançar marcas de mais de 1 milhão de visualizações em um único vídeo!\n\n* **BAIXO INVESTIMENTO INICIAL** - Um dos menores do mercado, apenas R$ 800, como pedido mínimo de produtos, sem taxas.\n\n* **ENTREGAMOS EM TODO O BRASIL**\n\n* **FLEXIBILIDADE NA ESCOLHA DOS PRODUTOS** - Você poderá combinar qualquer variedade dos mais de 200 itens, sem preocupar-se com quantidade mínima de cada um deles, criar seus próprios kits* e adequaras compras à sua própria demanda ou de seus clientes.\n\n* **RETORNO RÁPIDO E SEM TAXAS** - A lucratividade dos produtos Forever Liss ultrapassa os 100%, e você fica livre de taxas extras. É lucro líquido!",
+      "blockClass": "motivos-revenda"
+    }
+  },
+
+  /* Formas de Pagamento e Envio */
+  "flex-layout.row#formas-pagamento-titulo": {
+    "children": [ "rich-text#formas-pagamento-titulo" ]
+  },
+
+  "rich-text#formas-pagamento-titulo": {
+    "props": {
+      "text": "## Formas de Pagamento e Envio",
+      "blockClass": "titulo-seja-um-distribuidor"
+    }
+  },
+
+  "flex-layout.row#formas-pagamento-row": {
+    "children": [
+      "flex-layout.col#fp-col01",
+      "flex-layout.col#fp-col02"
+    ],
+    "props": {
+      "colGap": 10
+    }
+  },
+
+  "flex-layout.col#fp-col01": {
+    "children": [ "rich-text#fp-col01" ],
+    "props": {
+      "width": "70%"
+    }
+  },
+
+  "flex-layout.col#fp-col02": {
+    "children": [ "rich-text#fp-col02" ]
+  },
+
+  "rich-text#fp-col01": {
+    "props": {
+      "text": "* Facilitamos ainda suas compras com parcelamento em até 6x sem juros, para que você possa realizar suas vendas tranquilamente, com tempo hábil entre cada compra. \n\n* O pagamento do frete é responsabilidade do cliente, e pode variar de acordo com cada região do País é realizado exclusivamente por transportadoras. O prazo de entrega varia de acordo com cada região e cidade. o prazo é informado no carrinho de compras, após a consulta do cep de destino. O prazo de entrega começa a contar depois da identificação do pagamento. você irá receber todo o acompanhamento do pedido via e-mail cadastro no site. \n\n* Antes das encomendas serem coletadas na central de distribuição, cada item é avaliado por um teste de qualidade, e então os produtos são acomodados um a um, de forma a permanecerem estáveis e seguros por todo o trajeto do transporte.",
+      "blockClass": "fp-col-div"
+    }
+  },
+
+  "rich-text#fp-col02": {
+    "props": {
+      "text": "Em algumas épocas do ano ou eventos esporádicos, como a atual pandemia do Covid-19, alguns prazos podem estender-se mais que o usual, devido à sobrecarga dos sistemas de entrega. Porém, todas as encomendas são entregues seguindo uma fila, por ordem de pedido.",
+      "textColor": "c-on-disabled"
+    }
+  },
+
+  /* Como a Forever Liss me ajuda a vender mais? */
+  "flex-layout.row#como-titulo": {
+    "children": [ "rich-text#como-titulo" ]
+  },
+
+  "rich-text#como-titulo": {
+    "props": {
+      "text": "## Como a Forever Liss me ajuda a vender mais?",
+      "blockClass": "titulo-seja-um-distribuidor"
+    }
+  },
+
+  "flex-layout.row#como-row": {
+    "children": [
+      "flex-layout.col#c-col01",
+      "flex-layout.col#c-col02"
+    ],
+    "props": {
+      "colGap": 10
+    }
+  },
+
+  "flex-layout.col#c-col01": {
+    "children": [ "rich-text#c-col01" ],
+    "props": {
+      "width": "70%"
+    }
+  },
+
+  "flex-layout.col#c-col02": {
+    "children": [ "rich-text#c-col02" ]
+  },
+
+  "rich-text#c-col01": {
+    "props": {
+      "text": "Além do respaldo de uma das marcas mais vendidas do Brasil, com uma fidelização já estabelecida entre os consumidores, nossa central de Marketing mantém ainda um apoio constante e massivo em mídias digitais, com o intuito de sempre ampliar o desejo do público, ao mesmo tempo em que informa sobre o uso dos produtos da melhor forma possível.\n\n Os catálogos impressos e virtuais são sempre atualizados para também facilitar sua explicação e contato com seus clientes, tanto pessoalmente quanto à distância.\n Também contamos regularmente com distribuição de brindes exclusivos, que vão aumentar ainda mais a rotatividade de duas vendas.",
+      "blockClass": "fp-col-div"
+    }
+  },
+
+  "rich-text#c-col02": {
+    "props": {
+      "text": "Além da divulgação massiva em âmbito nacional, você conta ainda com um suporte técnico composto por um corpo de especialistas, que ajudarão tanto em questões técnicas sobre os produtos, como na abordagem para com os clientes na solução de problemas, com base em estudo amplo já realizado pela nossa central de atendimento.",
+      "textColor": "c-on-disabled"
+    }
+  },
+
+  /* Sobre */
+  "flex-layout.row#sobre-titulo": {
+    "children": [ "rich-text#sobre-titulo" ]
+  },
+
+  "rich-text#sobre-titulo": {
+    "props": {
+      "text": "## Sobre a Forever Liss",
+      "blockClass": "titulo-seja-um-distribuidor"
+    }
+  },
+
+  "flex-layout.row#sobre-row": {
+    "children": [
+      "flex-layout.col#s-col01",
+      "flex-layout.col#s-col02"
+    ],
+    "props": {
+      "colGap": 10,
+      "blockClass": "sobre-a-forever-liss"
+    }
+  },
+
+  "flex-layout.col#s-col01": {
+    "children": [
+      "rich-text#s-col01",
+      "rich-text#ctas-distribuidor-footer"
+    ],
+    "props": {
+      "width": "70%",
+      "blockClass": "ctas-footer-col"
+    }
+  },
+
+  "rich-text#ctas-distribuidor-footer": {
+    "props": {
+      "blockClass": "ctas-footer",
+      "text": "Junte-se a nós agora. Qual seu negócio?\n\n[Sou lojista/autônomo](/cadastro) [Sou distribuidor](/cadastro)"
+    }
+  },
+
+  "flex-layout.col#s-col02": {
+    "children": [
+      "rich-text#s-col02-1",
+      "rich-text#s-col02-2"
+    ]
+  },
+
+  "rich-text#s-col01": {
+    "props": {
+      "text": "Produtos de alta tecnologia, com a mesma qualidade encontrada nos tratamentos dos melhores salões especializados, porém voltados ao püblico doméstico. Dentro de cada potinho, a união entre as matérias primas mais avancadas do mercado e ativos extraidos da natureza, permitindo resultados espetaculares, mesmo em consumidores sem grande experiéncia com aplicação de cosméticos profissionais.\n\n O retorno positivo e o amor do público pela Forever Liss são visiveis: milhões de clientes postam diariamente seus incriveis resultados, utilizando a #hastag foreverliss, mostrando-se como uma marca perfeita para voca criar grandes oportunidades em sua empresa ou aumentando sua renda pessoal!",
+      "blockClass": "fp-col-div"
+    }
+  },
+
+  "rich-text#s-col02-1": {
+    "props": {
+      "text": "Além de cada produto estar rigorosamente de acordo com as normas da **ANVISA e Ministério da Saúde**, procuramos as melhores matérias primas e ingredientes naturais, além de não testarmos nossos produtos em animais. Assim, privando pela saúde de nossos clientes e bem estar do planeta.",
+      "textColor": "c-on-disabled"
+    }
+  },
+
+  "rich-text#s-col02-2": {
+    "props": {
+      "text": "[![Assista no Youtube](http://img.youtube.com/vi/69dCN34UtaM/maxresdefault.jpg)](https://www.youtube.com/watch?v=69dCN34UtaM)\nVeja aqui o último vídeo produzido pela Forever Liss, para você aprender mais e nossos clientes conhecerem melhor nossos produtos! Ou veja todos agora, [lá no nosso canal](https://www.youtube.com/channel/UC9HaGh9kp6SwL4YaB436DEQ).",
+      "textColor": "c-on-disabled"
+    }
+  }
+}

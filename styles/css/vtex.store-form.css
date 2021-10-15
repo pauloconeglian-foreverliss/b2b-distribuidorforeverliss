@@ -1,0 +1,32 @@
+:global(.vtex-styleguide-9-x-dropdown),
+:global(.vtex-input-prefix__group) {
+  margin-bottom: 1rem;
+}
+
+:global(.vtex-checkbox__line-container) {
+  background-color: #F1F1F1;
+  border-radius: .25rem;
+  padding-right: 1rem;
+  margin-bottom: 1rem;
+  align-items: center;
+  padding-left: 1rem;
+  line-height: 1.15;
+  min-height: 40px;
+}
+
+.formErrorUserInput {
+  margin-bottom: 1rem;
+  width: 100%;
+}
+
+.formSubmitContainer {
+  flex-direction: column-reverse;
+  justify-content: flex-end;
+  align-items: flex-end;
+  display: inline-flex;
+  width: 100%;
+}
+
+@media screen and (max-width: 1025px) {
+
+}

@@ -1,0 +1,29 @@
+{
+  "flex-layout.col#pages-menu": {
+    "children": [
+      "vtex.menu@2.x:menu#pages-menu-items"
+    ],
+    "props": {
+      "preventVerticalStretch": true,
+      "width": "35%",
+      "marginRight": 8,
+      "blockClass": "pages-menu-items"
+    }
+  },
+
+  "vtex.menu@2.x:menu#pages-menu-items": {
+    "props": {
+      "orientation": "vertical",
+      "blockClass": "pages-menu-items"
+    },
+    "children": [
+      "menu-item#quem-somos",
+      "menu-item#seguranca-e-privacidade",
+      "menu-item#regioes-atendidas",
+      "menu-item#seja-um-distribuidor",
+      // "menu-item#catalogo",
+      "menu-item#duvidas",
+      "menu-item#atendimento"
+    ]
+  }
+}

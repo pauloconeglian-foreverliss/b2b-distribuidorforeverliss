@@ -1,0 +1,52 @@
+{
+  "store.custom#regioes-atendidas": {
+    "blocks": [
+      "flex-layout.row#regioes-atendidas-row",
+      "newsletter"
+    ]
+  },
+
+  "flex-layout.row#regioes-atendidas-row": {
+    "children": [
+      "flex-layout.col#pages-menu",
+      "flex-layout.col#text-regioes-atendidas"
+    ],
+    "props": {
+      "blockClass": "institucional-row",
+      "paddingTop": 8,
+      "paddingBottom": 8
+    }
+  },
+
+  "flex-layout.col#text-regioes-atendidas": {
+    "children": [
+      "rich-text#title-regioes-atendidas",
+      "rich-text#regioes-atendidas-text",
+      "rich-text#regioes-atendidas-ctas"
+    ],
+    "props": {
+      "preventVerticalStretch": true
+    }
+  },
+
+  "rich-text#title-regioes-atendidas": {
+    "props": {
+      "text": "# Regiões Atendidas",
+      "blockClass": "title-pages"
+    }
+  },
+
+  "rich-text#regioes-atendidas-text": {
+    "props": {
+      "text": "Esta plataforma momentaneamente está ativa apenas para pedidos de revenda localizados no Estado de **São Paulo**.\nCaso você seja de outra região, será redirecionado para a versão estável anterior, mantendo os mesmos benefícios e preços?",
+      "blockClass": "about"
+    }
+  },
+
+  "rich-text#regioes-atendidas-ctas": {
+    "props": {
+      "text": "[Sou do Estado de São Paulo](/seja-um-distribuidor) [Sou de outro Estado](http://pedidos.distribuidorforeverliss.com.br/seja-distribuidor)",
+      "blockClass": "btnModalRedirect"
+    }
+  }
+}

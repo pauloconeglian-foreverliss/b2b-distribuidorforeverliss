@@ -1,0 +1,37 @@
+{
+  "store.custom#quem-somos": {
+    "path": "/quem-somos"
+  },
+
+  "store.custom#seguranca-e-privacidade": {
+    "path": "/seguranca-e-privacidade"
+  },
+
+  "store.custom#seja-um-distribuidor": {
+    "path": "/seja-um-distribuidor"
+  },
+
+  "store.custom#cadastro": {
+    "path": "/cadastro"
+  },
+
+  "store.custom#perguntas-frequentes": {
+    "path": "/perguntas-frequentes"
+  },
+
+  "store.custom#atendimento": {
+    "path": "/atendimento"
+  },
+
+  "store.custom#regioes-atendidas": {
+    "path": "/regioes-atendidas"
+  },
+
+  "store.custom#regioes-atendidas": {
+    "path": "/regioes-atendidas"
+  },
+
+  "store.custom#pedidos": {
+    "path": "/pedidos"
+  }
+}

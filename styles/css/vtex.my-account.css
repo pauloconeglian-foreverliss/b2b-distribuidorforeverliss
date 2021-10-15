@@ -1,0 +1,23 @@
+.addressList .boxContainerFooter {
+  display: none;
+}
+
+.boxContainerFooter :global(.vtex-button) {
+  display: none;
+}
+
+.addressCreate .boxContainer {
+  display: none;
+}
+
+.addressCreate::before {
+  content: "Não é possível adicionar um novo endereço.";
+  background-color: #fff6e0;
+  padding-bottom: .75rem;
+  border-radius: .25rem;
+  padding-right: 1rem;
+  padding-top: .75rem;
+  padding-left: 1rem;
+  font-size: 1rem;
+  color: #3f3f40;
+}

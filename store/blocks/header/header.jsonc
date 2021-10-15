@@ -1,0 +1,216 @@
+{
+  "header": {
+    "blocks": [
+      "header-layout.desktop",
+      "header-layout.mobile"
+    ]
+  },
+
+  "header.full": {
+    "blocks": [
+      "header-layout.desktop",
+      "header-layout.mobile"
+    ]
+  },
+
+  "header-layout.desktop": {
+    "children": [
+      "flex-layout.row#3-desktop",
+      "sticky-layout#4-desktop"
+    ]
+  },
+
+  "flex-layout.row#3-desktop": {
+    "props": {
+      "blockClass": "menu-link",
+      "horizontalAlign": "center",
+      "preventHorizontalStretch": true,
+      "preventVerticalStretch": true,
+      "fullWidth": false
+    },
+    "children": [
+      "vtex.menu@2.x:menu#websites",
+      "flex-layout.col#spacer"
+    ]
+  },
+
+  "flex-layout.col#spacer": {
+    "props": {
+      "width": "grow"
+    }
+  },
+
+  "sticky-layout#4-desktop": {
+    "props": {
+      "blockClass": "sticky-header"
+    },
+    "children": [
+      "flex-layout.row#4-desktop",
+      "flex-layout.row#category-menu"
+    ]
+  },
+
+  "flex-layout.row#category-menu": {
+    "props": {
+      "verticalAlign": "middle",
+      "blockClass": "main-menu"
+    },
+    "children": ["category-menu#desktop"]
+  },
+
+  "flex-layout.row#4-desktop": {
+    "props": {
+      "blockClass": "main-header",
+      "horizontalAlign": "center",
+      "verticalAlign": "center",
+      "preventHorizontalStretch": true,
+      "preventVerticalStretch": true,
+      "fullWidth": false
+    },
+    "children": [
+      "flex-layout.col#logo-desktop",
+      "flex-layout.col#spacer",
+      "challenge-block#search-bar-top",
+      "login",
+      "challenge-block#minicart"
+    ]
+  },
+
+  "challenge-block#minicart": {
+    "blocks": [
+      "challenge-content#minicart"
+    ]
+  },
+
+  "challenge-content#minicart": {
+    "children": [
+      "minicart.v2"
+    ],
+    "props": {
+      "blockClass": "minicart-header"
+    }
+  },
+
+  "flex-layout.col#logo-desktop": {
+    "props": {
+      "verticalAlign": "middle"
+    },
+    "children": [
+      "flex-layout.row#logo-desktop-wrapper"
+    ]
+  },
+
+  "flex-layout.row#logo-desktop-wrapper": {
+    "props": {
+      "verticalAlign": "middle"
+    },
+    "children": [
+      "rich-text#distribuidor",
+      "logo#desktop"
+    ]
+  },
+
+  "rich-text#distribuidor": {
+    "props": {
+      "text": "Distribuidor",
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER",
+      "textColor": "c-on-disabled",
+      "font": "t-mini",
+      "blockClass": "distribuidor-logo"
+    }
+  },
+
+  "logo#desktop": {
+    "props": {
+      "url": "assets/logo-forever-liss.svg",
+      "blockClass": "logo-header-desktop",
+      "title": "Logo Distribuidor Forever Liss",
+      "width": "100",
+      "href": "/"
+    }
+  },
+
+  "challenge-block#search-bar-top": {
+    "blocks": [
+      "challenge-content#search-bar-top"
+    ]
+  },
+
+  "challenge-content#search-bar-top": {
+    "children": [ "search-bar" ],
+    "props": {
+      "blockClass": "cc-search-top"
+    }
+  },
+
+  "search-bar": {
+    "blocks": [
+      /*"autocomplete-result-list.v2"*/
+    ],
+    "props": {
+      "openAutocompleteOnFocus": true
+    }
+  },
+
+  /**
+  * Mobile
+  **/
+  "header-layout.mobile": {
+    "children": ["sticky-layout#1-mobile"]
+  },
+
+  "sticky-layout#1-mobile": {
+    "children": ["flex-layout.row#1-mobile"]
+  },
+
+  "flex-layout.row#1-mobile": {
+    "children": [
+      "category-menu#mobile",
+      "logo#mobile",
+      "flex-layout.col#spacer",
+      "challenge-block#search-bar-top-mobile",
+      "login",
+      "challenge-block#minicart"
+    ],
+    "props": {
+      "blockClass": "main-header-mobile",
+      "preventHorizontalStretch": true,
+      "preserveLayoutOnMobile": true,
+      "fullWidth": true
+    }
+  },
+
+  "challenge-block#search-bar-top-mobile": {
+    "blocks": [
+      "challenge-content#search-bar-top-mobile"
+    ]
+  },
+
+  "challenge-content#search-bar-top-mobile": {
+    "children": [ "search-bar#mobile" ],
+    "props": {
+      "blockClass": "cc-search-top-mobile"
+    }
+  },
+
+  "search-bar#mobile": {
+    "blocks": [
+      /*"autocomplete-result-list.v2"*/
+    ],
+    "props": {
+      "displayMode": "search-and-clear-buttons",
+      "openAutocompleteOnFocus": true
+    }
+  },
+
+  "logo#mobile": {
+    "props": {
+      "url": "assets/logo-forever-liss.svg",
+      "blockClass": "logo-header-mobile",
+      "title": "Logo Distribuidor Forever Liss",
+      "width": "60",
+      "href": "/"
+    }
+  }
+}

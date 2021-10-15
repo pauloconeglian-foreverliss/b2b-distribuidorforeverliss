@@ -1,0 +1,45 @@
+{
+  "store.custom#cadastro": {
+    "blocks": [
+      "flex-layout.row#cadastro-row",
+      "newsletter"
+    ]
+  },
+
+  "flex-layout.row#cadastro-row": {
+    "children": [
+      "flex-layout.col#pages-menu",
+      "flex-layout.col#text-cadastro"
+    ],
+    "props": {
+      "blockClass": "institucional-row",
+      "paddingTop": 8,
+      "paddingBottom": 8
+    }
+  },
+
+  "flex-layout.col#text-cadastro": {
+    "children": [
+      "rich-text#title-cadastro",
+      "rich-text#text-cadastro",
+      "form"
+    ],
+    "props": {
+      "blockClass": "textColumn",
+      "preventVerticalStretch": true
+    }
+  },
+
+  "rich-text#title-cadastro": {
+    "props": {
+      "text": "# Seja um Distribuidor",
+      "blockClass": "title-pages"
+    }
+  },
+
+  "rich-text#text-cadastro": {
+    "props": {
+      "text": "Preencher todos os dados corretamente é de extrema importância para que possamos agilizar o processo de análise."
+    }
+  }
+}

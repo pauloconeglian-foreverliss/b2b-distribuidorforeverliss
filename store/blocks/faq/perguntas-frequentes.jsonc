@@ -1,0 +1,101 @@
+{
+  "store.custom#perguntas-frequentes": {
+    "blocks": [
+      "flex-layout.row#perguntas-frequentes-row",
+      "newsletter"
+    ]
+  },
+
+  "flex-layout.row#perguntas-frequentes-row": {
+    "children": [
+      "flex-layout.col#pages-menu",
+      "flex-layout.col#text-perguntas-frequentes"
+    ],
+    "props": {
+      "blockClass": "institucional-row",
+      "paddingTop": 8,
+      "paddingBottom": 8
+    }
+  },
+
+  "flex-layout.col#text-perguntas-frequentes": {
+    "children": [
+      "rich-text#title-perguntas-frequentes",
+      "rich-text#pergunta01",
+      "rich-text#pergunta02",
+      "rich-text#pergunta03",
+      "rich-text#pergunta04",
+      "rich-text#pergunta05",
+      "rich-text#pergunta06",
+      "rich-text#pergunta07",
+      "rich-text#pergunta08"
+    ],
+    "props": {
+      "blockClass": "textColumn",
+      "preventVerticalStretch": true
+    }
+  },
+
+  "rich-text#title-perguntas-frequentes": {
+    "props": {
+      "text": "# Perguntas Frequentes",
+      "blockClass": "title-pages"
+    }
+  },
+
+  "rich-text#pergunta01": {
+    "props": {
+      "text": "#### O que é necessário para revender ou distribuir produto Forever Liss?\nPara revender ou ser distribuidor da Forever Liss é necessário ter um CNPJ com inscrição estadual. Com o CNPJ ativo, basta efetuar o cadastro [clicando aqui](/seja-um-distribuidor) (enviar para página de inscrição) e aguardar a analise e liberação do seu cadastro para efetuar compras.",
+      "blockClass": "faq"
+    }
+  },
+
+  "rich-text#pergunta02": {
+    "props": {
+      "text": "#### Qual o valor minimo de compras para revender?\nO valor mínimo é de R$800 por pedido. o valor do frete não entra nesta condição.",
+      "blockClass": "faq"
+    }
+  },
+
+  "rich-text#pergunta03": {
+    "props": {
+      "text": "#### Qual o valor do frete?\nO valor frete é por conta do cliente. o valor varia de acordo com a cidade e região de destino. com o cadastro aprovado em nosso site, você pode consultar o valor de frete no carrinho de compras, consultando o seu cep.",
+      "blockClass": "faq"
+    }
+  },
+
+  "rich-text#pergunta04": {
+    "props": {
+      "text": "#### Posso revender usando o cpf?\nNão! realizamos as vendas apenas para as **pessoas jurídicas com inscrições estaduais**, com isso os mei e cpf não conseguem realizar as compras em nosso setor, somente no site de varejo.",
+      "blockClass": "faq"
+    }
+  },
+
+  "rich-text#pergunta05": {
+    "props": {
+      "text": "#### Quanto tempo demora para liberar o cadastro?\nA liberação e aprovação do cadastro pode demorar até 15 dias úteis, mas fique tranquila(o) que pode ser liberado antes do prazo. Encaminharemos via e-mail e whatsapp as informações como login e senha para acessar o portal distribuidor.",
+      "blockClass": "faq"
+    }
+  },
+
+  "rich-text#pergunta06": {
+    "props": {
+      "text": "#### Qual o prazo de entrega dos pedidos?\nO prazo de entrega varia de acordo com cada região e cidade. o prazo é informado no carrinho de compras, após a consulta do cep de destino. O prazo de entrega começa a contar depois da identificação do pagamento. você irá receber todo o acompanhamento do pedido via e-mail cadastro no site.",
+      "blockClass": "faq"
+    }
+  },
+
+  "rich-text#pergunta07": {
+    "props": {
+      "text": "#### Como posso ver os valores dos produtos para revender?\nPara ter acesso aos valores dos produtos forever liss para revenda, 1° é necessário ter um cadastro em nosso site, 2° o cadastro precisa estar aprovado para revender. com o cadastro aprovado basta fazer o login em nosso site, que conseguirá visualizar os produtos dos produtos para revenda.",
+      "blockClass": "faq"
+    }
+  },
+
+  "rich-text#pergunta08": {
+    "props": {
+      "text": "#### Posso receber amostras dos produtos, antes de revender?\nInfelizmente não enviamos amostras antes da sua compra ser efetuada. amostras são enviadas junto com o pedido feito no distribuidor, dependendo da disponibilidade em nosso estoque.",
+      "blockClass": "faq"
+    }
+  }
+}

@@ -1,0 +1,67 @@
+.paper {
+  max-width: 620px;
+  padding: 2rem;
+}
+
+.headerContent :global(.vtex-rich-text-0-x-heading) {
+  margin-top: 0;
+}
+
+.actionsContentWrapper {
+  flex-direction: row-reverse;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
+/*Buttons*/
+.actionsContentWrapper .closeButton,
+.actionsContentWrapper :global(.vtex-rich-text-0-x-link--btnModalRedirect) {
+  background-image: linear-gradient(to bottom, #0adc18, #00bc0d);
+  text-shadow: 1px 1px 5px rgba(0,0,0,0.1);
+  box-shadow: 2px 2px 5px rgba(0,0,0,0.2);
+  -webkit-font-smoothing: antialiased;
+  -webkit-box-direction: normal;
+  text-transform: uppercase;
+  background-color: #00bc0d;
+  text-transform: uppercase;
+  justify-content: center;
+  box-sizing: border-box;
+  vertical-align: middle;
+  border-radius: 0.25rem;
+  align-items: center;
+  line-height: 1.4rem;
+  font-size: 1.2rem;
+  font-weight: 400;
+  min-height: 4rem;
+  color: #ffffff;
+  margin: 0 1rem;
+  display: flex;
+  width: 12rem;
+  border: none;
+}
+
+.actionsContentWrapper :global(.vtex-rich-text-0-x-link--btnModalRedirect) {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+@media screen and (max-width: 540px) {
+  .actionsContentWrapper,
+  .paper {
+    padding: 1rem;
+  }
+
+  .headerContent :global(.vtex-rich-text-0-x-heading) {
+    font-size: 1rem;
+  }
+
+  .actionsContentWrapper .closeButton,
+  .actionsContentWrapper :global(.vtex-rich-text-0-x-link--btnModalRedirect) {
+    line-height: 1rem;
+    font-size: 0.8rem;
+    margin: 0 0.5rem;
+    min-height: 3.8rem;
+    width: 6.4rem;
+  }
+}

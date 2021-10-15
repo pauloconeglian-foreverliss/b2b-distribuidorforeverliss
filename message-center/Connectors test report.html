@@ -1,0 +1,31 @@
+<div>
+    <div class="container">
+        <div class="row">
+            <img class="center-block" src="http://vtexstore.vteximg.com.br/arquivos/footer__logo-vtex.png" width="100px" height="35px"></img <div id="resultList">
+
+            <h1 style="color:#014673" align="center">Provider Integration Test Result</h1>
+            <h4 style="color:#014673" align="center">Fails Summary</h4>
+            <h4 style="color:#014673" align="center">User: {{ results.0.username }}</h4>
+            </br></br>
+            
+            <ul style="padding-left:5%">
+            {{#if results}} {{#each results}}
+                {{#if status}}
+                <!-- do nothing -->
+                {{else}}
+                    <h3>Scenario: {{replace scenario "/" ""}} - ID: {{id}} </h3>                    
+                {{/if}}
+
+                {{#if result}} {{#each result}}
+                    <p>Test Case: {{threadName}}</p>
+                    <p>Assertive: {{testName}}</p>
+                    <p>Message: {{failureMessage}}</p>
+                    <p>URL: {{reference}}</p>
+                    <hr>
+                {{/each}} {{/if}} {{/each}} {{else}}
+                <p>There are no results.</p>
+            {{/if}}
+            </ul>
+        </div>
+    </div>
+</div>

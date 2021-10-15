@@ -1,0 +1,111 @@
+.section--deliveryPackages .packageHeaderColumn {
+  display: none;
+}
+
+.package--delivery .productList {
+  width: 100%;
+}
+
+.section--confirmation {
+  padding-right: 1.5rem;
+  margin-bottom: 0;
+}
+
+.section--bank-invoice {
+  margin-bottom: 0;
+  padding-bottom: 0;
+  width: 100% !important;
+  border: none;
+  padding-left: 1.5rem;
+}
+
+.barCodeWrapper {
+  min-width: 100%;
+  margin-bottom: 2rem;
+}
+
+.barCodeContainer {
+  flex-direction: column;
+}
+
+.barCodeContainer::before {
+  content: "Seu pedido só será liberado após confirmação do pagamento.\aPegue seu boleto abaixo, efetue o pagamento antes da data de vencimento.";
+  white-space: pre-wrap;
+  margin-bottom: 1rem;
+  font-weight: bold;
+  text-align: left;
+  min-width: 100%;
+}
+
+.printHintWrapper {
+  display: none;
+}
+
+.printButtonWrapper {
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+  width: 100%;
+  margin: 0;
+}
+
+.printButtonWrapper :global(.vtex-button) {
+  background-color: #00bc0d;
+  border-color: #00bc0d;
+  color: white;
+}
+
+.printButtonWrapper :global(.vtex-button):hover {
+  background-color: #0adc18;
+  border-color: #0adc18;
+}
+
+.barCodeNumber {
+  width: 100%;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.section--bank-invoice .bankInvoiceEmbedWrapper {
+  display: none;
+}
+
+.orderOptionsWrapper {
+  align-items: flex-end;
+  justify-content: flex-end;
+  margin: 4rem 0 2rem;
+}
+
+.totalList {
+  width: 100%;
+}
+
+@media screen and (max-width: 1025px) {
+  .orderPlacedWrapper {
+    padding-top: 2rem;
+  }
+
+  .orderPlacedWrapper :global(.vtex-button) {
+    margin: 0 auto;
+  }
+
+  .section--notices,
+  .orderOptionsWrapper--mobile {
+    display: none;
+  }
+
+  .section--confirmation,
+  .section--bank-invoice {
+    padding: 0;
+  }
+
+  .orderPlacedMainWrapper {
+    margin-left: 1rem;
+    margin-right: 1rem;
+    width: calc(100% - 2rem);
+  }
+
+  .orderPaymentItem {
+    padding-bottom: 2rem;
+  }
+}

@@ -1,0 +1,150 @@
+/**
+* Top menu
+**/
+.menuContainer--top-menu {
+  padding-top: 0.6rem;
+  padding-bottom: 0.6rem;
+}
+
+.menuContainer--top-menu .styledLinkContainer {
+  padding: 0;
+}
+
+.menuContainer--top-menu .styledLinkContent {
+  font-size: 0.8rem;
+}
+
+/**
+* Menu pages
+**/
+.menuContainer--pages-menu-items {
+  background-color: transparent;
+}
+
+.menuContainer--pages-menu-items .styledLink {
+  display: block;
+  border-bottom: 1px solid #DDD;
+  box-shadow: 0px 6px 10px -12px rgba(0, 0, 0, 0.4);
+  padding: 0.5rem 0.5rem 0.7rem;
+  color: #8d8d8d;
+  position: relative;
+}
+
+.menuContainer--pages-menu-items .styledLink::after {
+  border-style: solid;
+  border-width: 0.15em 0.15em 0 0;
+  content: '';
+  display: inline-block;
+  height: 0.45em;
+  right: 1rem;
+  position: absolute;
+  top: 0.65em;
+  transform: rotate(45deg);
+  vertical-align: top;
+  width: 0.45em;
+  transition: right 0.2s ease-in-out;
+}
+
+.menuContainer--pages-menu-items .styledLink:hover::after {
+  right: 0.25em;
+}
+
+.menuContainer--pages-menu-items .styledLink:hover {
+  color: #2E2E2E;
+}
+
+/**
+* Menu footer
+**/
+.menuContainer--institucional-footer {
+  padding: 0;
+}
+
+.menuItemInnerDiv {
+  padding: 0;
+}
+
+.menuContainer--atendimento-footer .styledLinkContainer,
+.menuContainer--duvidas-footer .styledLinkContainer,
+.menuContainer--distribuidor-footer .styledLinkContainer,
+.menuContainer--institucional-footer .styledLinkContainer {
+  margin: 0;
+}
+
+.menuContainer--atendimento-footer .styledLinkContent,
+.menuContainer--duvidas-footer .styledLinkContent,
+.menuContainer--distribuidor-footer .styledLinkContent,
+.menuContainer--institucional-footer .styledLinkContent {
+  font-size: 0.8rem;
+  color: #727273;
+}
+
+.menuContainer--atendimento-footer .styledLinkContent:hover,
+.menuContainer--duvidas-footer .styledLinkContent:hover,
+.menuContainer--distribuidor-footer .styledLinkContent:hover,
+.menuContainer--institucional-footer .styledLinkContent:hover {
+  text-decoration: underline;
+}
+
+.menuContainer--institucional-footer::before,
+.menuContainer--distribuidor-footer::before,
+.menuContainer--duvidas-footer::before,
+.menuContainer--atendimento-footer::before {
+  text-transform: unset;
+  margin-bottom: 1rem;
+  font-weight: bold;
+  font-size: 1rem;
+  color: #2E2E2E;
+}
+
+.menuContainer--institucional-footer::before {
+  content: "Institucional";
+}
+
+.menuContainer--distribuidor-footer::before {
+  content: "Distribuidor";
+}
+
+.menuContainer--duvidas-footer::before {
+  content: "Dúvidas";
+}
+
+.menuContainer--atendimento-footer::before {
+  content: "Atendimento";
+}
+
+@media screen and (max-width: 1025px) {
+  .menuContainer--pages-menu-items .styledLinkContainer {
+    padding-left: 0;
+    padding-right: 0;
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  .menuContainer--footer-mobile .menuItemInnerDiv {
+    border-bottom: 1px solid #e2e2e2;
+    padding: 0.6rem 0;
+    width: 100%;
+  }
+
+  .menuContainer--footer-mobile .styledLinkContent {
+    font-weight: 700;
+  }
+
+  .menuContainer--footer-mobile .submenuAccordion {
+    padding: 0;
+  }
+
+  .menuContainer--footer-mobile .submenuAccordion .menuItem {
+    padding: 0.4rem 0 0;
+  }
+
+  .menuContainer--footer-mobile .submenuAccordion .menuContainerNav {
+    margin: 0;
+    width: 100%;
+  }
+
+  .menuContainer--footer-mobile .submenuAccordion .styledLinkContent {
+    font-weight: 400;
+  }
+}

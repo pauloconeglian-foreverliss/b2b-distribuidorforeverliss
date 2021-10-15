@@ -1,0 +1,162 @@
+{
+  "store.home": {    
+    "blocks": [
+      "list-context.image-list#fullbanner",
+      /*"__fold__.experimentalLazyAssets",*/
+      /*"flex-layout.row#deals",*/
+      "slider-layout#deals",
+      /*"rich-text#shelf-title",*/
+      /*"flex-layout.row#shelf",*/
+      "rich-text#vantagens-title",
+      "flex-layout.row#vantagens",
+      "newsletter"
+    ]
+  },
+
+  /* Modal Home */
+  "modal-trigger#aviso": {
+    "children": [
+      "modal-layout#aviso"
+    ],
+    "props": {
+      "trigger": "load"
+    }
+  },
+
+  "modal-layout#aviso": {
+    "children": [
+      "modal-header",
+      "rich-text#modal-content",
+      "modal-actions"
+    ],
+    "props": {
+      "blockClass": "modalAvisoHome"
+    }
+  },
+
+  "modal-header": {
+    "children": [
+      "rich-text#modal-title"
+    ]
+  },
+
+  "rich-text#modal-title": {
+    "props": {
+      "text": "### Bem-vindo(a) à loja virtual para revendedores Forever Liss"
+    }
+  },
+
+  "rich-text#modal-content": {
+    "props": {
+      "text": "Esta plataforma momentaneamente está ativa apenas para pedidos de revenda localizados no Estado de São Paulo.\nCaso você seja de outra região, será redirecionado para a versão estável anterior, mantendo os mesmos benefícios e preços, ok? 😉"
+    }
+  },
+
+  "modal-actions": {
+    "children": [
+      "rich-text#button-redirect",
+      "modal-actions.close"
+    ]
+  },
+
+  "modal-actions.close": {
+    "props": {
+      "label": "Estado de São Paulo"
+    }
+  },
+
+  "rich-text#button-redirect": {
+    "props": {
+      "text": "[Outros](http://pedidos.distribuidorforeverliss.com.br/seja-distribuidor)",
+      "blockClass": "btnModalRedirect"
+    }
+  },
+
+
+  "shelf#home": {
+    "blocks": ["product-summary.shelf"]
+  },
+
+  "list-context.image-list#fullbanner": {
+    "children": ["slider-layout#fullbanner-images"],
+    "props": {
+      "height": 720,
+      "images": [
+        {
+          "image": "assets/fullbanner-distribuidor-forever-liss-03.jpg",
+          "mobileImage": "assets/fullbanner-distribuidor-forever-liss-03.jpg",
+          "link": {
+            "url": "/seja-um-distribuidor",
+            "title": "Veja como ser um distribuidor"
+          }
+        }
+      ]
+    }
+  },
+
+  "slider-layout#fullbanner-images": {
+    "props": {
+      "itemsPerPage": {
+        "desktop": 1,
+        "tablet": 1,
+        "phone": 1
+      },
+      "infinite": true,
+      "showNavigationArrows": "desktopOnly",
+      "blockClass": "carousel"
+    }
+  },  
+
+  "rich-text#vantagens-title": {
+    "props": {
+      "text": "## Seja um distribuidor autorizado\nFaça parte do ramo que mais cresce no mundo com a **Forever Liss Professional**.",
+      "blockClass": "vantagens-title"
+    }
+  },
+
+  "flex-layout.row#vantagens": {
+    "children": [
+      "flex-layout.col#vantagens-col1",
+      "flex-layout.col#vantagens-col2"
+    ],
+    "props": {
+      "blockClass": "vantagens"
+    }
+  },
+
+  "flex-layout.col#vantagens-col1": {
+    "children": [
+      "rich-text#vantagens-text1"
+    ]
+  },
+
+  "flex-layout.col#vantagens-col2": {
+    "children": [
+      "rich-text#vantagens-text2"
+    ]
+  },
+
+  "rich-text#vantagens-text1": {
+    "props": {
+      "text": "* Baixo investimento inicial e retorno rápido (parcelado).\n* Facilidade na forma de pagamento\n* Produtos de qualidade comprovada, produzidos com matéria-prima importada e nacional, rigorosamente de acordo com as normas da ANVISA e Ministério da Saúde.\n* Alta rentabilidade.\n* Atendimento personalizado ao distribuidor.",
+      "font": "t-heading-5",
+      "blockClass": "vantagens-text"
+    }
+  },
+
+  "rich-text#vantagens-text2": {
+    "props": {
+      "text": "* Indústria com equipamentos altamente tecnológicos.\n* Ações promocionais que visam o fortalecimento da marca e divulgação dos produtos em nível nacional e âmbito mundial.\n* Publicidade nos principais veículos especializados.\n* Apoio de material publicitário.\nFacilidade de negociação nas compras.\n\n[Veja como ser um Distribuidor](/seja-um-distribuidor)",
+      "font": "t-heading-5",
+      "blockClass": "vantagens-text"
+    }
+  },
+
+  "newsletter": {
+    "props": {
+      "label": "Não perca nenhuma novidade",
+      "placeholder": "Seu e-mail de contato",
+      "submit": "OK"
+    }
+  }
+}

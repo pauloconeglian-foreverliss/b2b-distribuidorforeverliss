@@ -1,0 +1,64 @@
+{
+  "store.custom#pedidos": {
+    "parent": {
+      "header": "header#empty",
+      "footer": "footer#empty"
+    },
+    "blocks": [
+      "flex-layout.row#pedidos-row"
+    ]
+  },
+
+  "flex-layout.row#pedidos-row": {
+    "children": [
+      "flex-layout.col#text-pedidos"
+    ],
+    "props": {
+      "blockClass": "institucional-row",
+      "paddingTop": 8,
+      "paddingBottom": 8
+    }
+  },
+
+  "flex-layout.col#text-pedidos": {
+    "children": [
+      "logo",
+      "rich-text#title-pedidos",
+      "rich-text#pedidos-text",
+      "rich-text#spacer",
+      "rich-text#footer",
+      "rich-text#copyright"
+    ],
+    "props": {
+      "blockClass": "textColumn",
+      "preventVerticalStretch": true
+    }
+  },
+
+  "logo": {
+    "props": {
+      "url": "assets/logo-forever-liss.svg",
+      "blockClass": "logo-pedidos",
+      "title": "Logo Distribuidor Forever Liss",
+      "width": "200"
+    }
+  },
+
+  "rich-text#title-pedidos": {
+    "props": {
+      "text": "# Nosso sistema de pedidos mudou!",
+      "blockClass": "title-pages",
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER"
+    }
+  },
+
+  "rich-text#pedidos-text": {
+    "props": {
+      "text": "Clique no botão abaixo para acessar:\n\n[Acessar](http://pedidos.distribuidorforeverliss.com.br/?v=35186268745952)",
+      "blockClass": "pedidos",
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER"
+    }
+  }
+}
